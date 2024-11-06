@@ -4,6 +4,10 @@
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage[utf8]{inputenc}
+\usepackage{outlines}
+
+\renewcommand{\labelitemiii}{\textbullet}
+\renewcommand{\labelitemiv}{\textendash}
 
 \newcommand{\todo}[1]{\textcolor{red}{#1}}
 
@@ -51,22 +55,59 @@
 	is used for video feature extraction and VGGish (1D CNN) is used as audio feature extractor. HL-NET utilizes a local and global encoder 
 	to capture short-term patterns (1 - 2s) and long term dependencies across the entire video, respectively. The output of the model is a 
 	violence score based on individual snippets of video and audio which can be used for scene restricted violence prediction or video classification
-	by max pooling or averaging. 
+	by max pooling or averaging. The source code for the model in this paper is open source 
+	so I think we will start with their model architecture, use a downsampled subset of the xd-violence 
+	dataset for training, and fine-tune the hyperparameters of their model in a semi-supervised approach.
 
+	There also other papers that try to solve anomaly detection in different ways, such as using a 
+	Variational Autoencoder to predict future samples of video, and using the reconstruction error to 
+	determine if an anomalous event has occured [2] This Autoencoder reconstruction loss
+	method seems like a popular way of getting a per scene violence detection 
+	scores. 
+	
+	\section{Outline}
 
-	\paragraph{Dataset} \todo{BRIEFLY describe the dataset and any pre-processing you may use that is special (e.g. downsample all images by x8 to enable colaboratory training etc.)}
-	
-	\paragraph{Setup, Training and Evaluation} \todo{IMPORTANT: you can change this paragraph to better fit your project. Questions to answer: What architecture did you chose and why? How did you accomplish un- or self-supervised learning? What tweaks were necessary to make this happen, e.g. custom layer designs, auxiliary tasks, etc.?}
-	
-	
-	
-	\section{Results}
+	\begin{outline}
+		\1 Setup
+		   \2 Code Setup
+				\3 Organize source code referenced in the paper [1] into python notebook style
+				\3 Verify we can train and run inference
+			
+		  \2 Dataset
+				\3 Download XD-Violence Dataset and upload it to Google Drive (or server where we 
+				perform training)
+				\3 Split Dataset into Images for Pseudo-Labels (for Semi Supervision), Training, Validation, Testing. 
+				\3 Downsample Videos (x2 x4) depending on length of training time.
+		\1 Training
+			\2 Semi-Supervision
+				\3 Train on subset of training data. 
+				\3 Create PseudoLabels and Retrain
+				\3 Modify Loss function to consider unsupervised and supervised 
+				classification that will need to be hypertuned:
+
+				\[Loss_T  = \alpha * Loss_S + \beta * Loss_{US}\]
+				\3 BCE for classification
+
+		\1 Evaluation: 
+		\2 Hyperparameter Tuning:
+		 Adjust Learning Rate, optimizers, batch sizes, dropout, to increase
+		model accuracy over time. 
+		\2 Compress Model by reducing layers and overall paramater and observe 
+		if accuracy can be preserved.
+		\3 Evaluate if similar model accuracy can be achieved with more initial 
+		pooling layers to reduce video dimensions.
+				
+	 \end{outline}
 	
 	
 	\section{References} 
 	\begin{thebibliography}{9}
-		\bibitem{texbook}
+		\bibitem{paper}
 		Shaoyuan Xu, Qi Jin, Yueming Liu, Kai Wang, and Tianqiang Ruan. "Not Only Look, but also Listen: Learning Multimodal Violence Detection under Weak Supervision." *Proceedings of the European Conference on Computer Vision (ECCV)*, 2020.
+
+		\bibitem{paper}
+		S. Xu, Y. Liu, S. Wu, and T. Ruan. "A New Comprehensive Benchmark for Semi-supervised Video Anomaly Detection and Anticipation." *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)*, 2021.
+
 
 		\end{thebibliography}
 
