@@ -33,29 +33,16 @@
 	By utiling robust anomaly detection algorithims in computer vision, security teams can quickly and autonomously identify 
 	suspicous activity in crowded areas and can help prevent anomalous events from escalating.
 
-	In many current anomalous detection algorithims, only one modality (video) is processed to predict the occurence of irreugular events. 
-	However, by adjoining the auditory modality, models can benefit from richer contextual understanding of scenes that are revealed 
-	in audio samples such as screams, crashes, or other loud sounds. Furthermore, in cases in which both modalities 
-	are low resolution (ie. noisy, compressed audio or blurry video), both modalities can help improve prediction accuracy.
-
-
 	% \paragraph{Related Work} \todo{e.g. previous supervised approaches, other unsupervised methods etc}
 	
 	\section{Summary of Dataset}
 	There are two datasets that are being considered for this project. The first being \textbf{XD-Violence} which
 	comprises of 4754 untrimmed videos obtained form YouTube videos that are divided into with corresponding audio signals and weak labels (violent/normal).
-	This dataset has gained popularity with research focusing on anomaly detection. We will have to do some preprocessing
-	to shrink the video length and downsample the video resolution (x6 or x8 maybe). Videos are a very high-dimensional input and could 
-	easily increase model complexity and training time. Another dataset being considered is the \textbf{UCF-Crime} comprising of 1900
-	untrimmed videos of 13 realistic anomalous events, such as burglary, robbery, fighting, and so. 
+	 Another dataset being considered is the \textbf{UCF-Crime} comprising of 1900 untrimmed videos of 13 realistic anomalous events, such as burglary, robbery, fighting, and so. 
 
 	\section{Related Papers}
 	The first reference, "Learning Multimodal Violence Detection under Weak Supervision", uses the XD-Violence dataset to detect Violence
-	by fusing video and audio modalities and using HL-Net architecture to capture short term and long term temporal information [1]. A 3D CNN 
-	is used for video feature extraction and VGGish (1D CNN) is used as audio feature extractor. HL-NET utilizes a local and global encoder 
-	to capture short-term patterns (1 - 2s) and long term dependencies across the entire video, respectively. The output of the model is a 
-	violence score based on individual snippets of video and audio which can be used for scene restricted violence prediction or video classification
-	by max pooling or averaging. The source code for the model in this paper is open source 
+	by fusing video and audio modalities and using HL-Net architecture to capture short term and long term temporal information [1]. The source code for the model in this paper is open source 
 	so I think we will start with their model architecture, use a downsampled subset of the xd-violence 
 	dataset for training, and fine-tune the hyperparameters of their model in a semi-supervised approach.
 
@@ -100,7 +87,6 @@
 	 \end{outline}
 	
 	
-	\section{References} 
 	\begin{thebibliography}{9}
 		\bibitem{paper}
 		Shaoyuan Xu, Qi Jin, Yueming Liu, Kai Wang, and Tianqiang Ruan. "Not Only Look, but also Listen: Learning Multimodal Violence Detection under Weak Supervision." *Proceedings of the European Conference on Computer Vision (ECCV)*, 2020.
