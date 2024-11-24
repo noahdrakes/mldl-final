@@ -1,2 +1,2 @@
 # MultiModal Violdence Detection Model 
-## from XD-Violence paper
+from XD-Violence paper
