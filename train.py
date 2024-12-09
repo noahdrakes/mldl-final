@@ -10,45 +10,56 @@ from layers import GraphAttentionLayer, linear, GraphConvolution, SimilarityAdj
 from sklearn.metrics import auc, precision_recall_curve
 from utils import *
 import time
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("modality", type= str, help="The path to the input file.") 
+arg = parser.parse_args()
 
 class Args:
-    def __init__(self):
-        self.modality = 'AUDIO'
+    def __init__(self, modality):
+        # self.modality = 'AUDIO'
+        self.modality = modality
         # Original paths
-        self.rgb_list = '/export/fs05/bodoom1/dl_proj/final_dl/list/rgb.list'
-        self.flow_list = '/export/fs05/bodoom1/dl_proj/final_dl/list/flow.list'
-        self.audio_list = '/export/fs05/bodoom1/dl_proj/final_dl/list/audio.list'
+        self.rgb_list = '/export/fs05/bodoom1/dl_proj/final_dl/list_exports/rgb.list'
+        self.flow_list = '/export/fs05/bodoom1/dl_proj/final_dl/list_exports/flow.list'
+        self.audio_list = '/export/fs05/bodoom1/dl_proj/final_dl/list_exports/audio.list'
 
         # Train paths
-        self.train_rgb_list = '/export/fs05/bodoom1/dl_proj/final_dl/list/rgb_train.list'
-        self.train_flow_list = '/export/fs05/bodoom1/dl_proj/final_dl/list/flow_train.list'
-        self.train_audio_list = '/export/fs05/bodoom1/dl_proj/final_dl/list/audio_train.list'
+        self.train_rgb_list = '/export/fs05/bodoom1/dl_proj/final_dl/list_exports/rgb_train.list'
+        self.train_flow_list = '/export/fs05/bodoom1/dl_proj/final_dl/list_exports/flow_train.list'
+        self.train_audio_list = '/export/fs05/bodoom1/dl_proj/final_dl/list_exports/audio_train.list'
 
         # Val paths
-        self.val_rgb_list = '/export/fs05/bodoom1/dl_proj/final_dl/list/rgb_val.list'
-        self.val_flow_list = '/export/fs05/bodoom1/dl_proj/final_dl/list/flow_val.list'
-        self.val_audio_list = '/export/fs05/bodoom1/dl_proj/final_dl/list/audio_val.list'
+        self.val_rgb_list = '/export/fs05/bodoom1/dl_proj/final_dl/list_exports/rgb_val.list'
+        self.val_flow_list = '/export/fs05/bodoom1/dl_proj/final_dl/list_exports/flow_val.list'
+        self.val_audio_list = '/export/fs05/bodoom1/dl_proj/final_dl/list_exports/audio_val.list'
 
         # Test paths
-        self.test_rgb_list = '/export/fs05/bodoom1/dl_proj/final_dl/list/rgb_test.list'
-        self.test_flow_list = '/export/fs05/bodoom1/dl_proj/final_dl/list/flow_test.list'
-        self.test_audio_list = '/export/fs05/bodoom1/dl_proj/final_dl/list/audio_test.list'
+        self.test_rgb_list = '/export/fs05/bodoom1/dl_proj/final_dl/list_exports/rgb_test.list'
+        self.test_flow_list = '/export/fs05/bodoom1/dl_proj/final_dl/list_exports/flow_test.list'
+        self.test_audio_list = '/export/fs05/bodoom1/dl_proj/final_dl/list_exports/audio_test.list'
 
-        self.gt = '/export/fs05/bodoom1/dl_proj/final_dl/list/gt.npy'
+        self.gt = '/export/fs05/bodoom1/dl_proj/final_dl/list_exports/gt.npy'
         self.gpus = 1
         self.lr = 0.0001
         self.batch_size = 128
         self.workers = 1  # Reduced from 4 to avoid memory issues
         self.model_name = 'wsanodet'
         self.pretrained_ckpt = None
-        #self.feature_size = 1152  # 1024 + 128
-        self.feature_size = 128  # 1024 + 128
+        if self.modality == 'AUDIO':
+            self.feature_size = 128  # 128
+        elif self.modality == 'RGB':
+            self.feature_size = 1024  # 1024 
+        elif self.modality == 'MIX2':
+            self.feature_size = 1152  # 1024 + 128
+
         self.num_classes = 1
         self.dataset_name = 'XD-Violence'
         self.max_seqlen = 200
         self.max_epoch = 50
 
-args = Args()
+args = Args(arg.modality)
     
 
 
@@ -128,12 +139,21 @@ class Dataset(data.Dataset):
                 features = np.concatenate((features1, features2),axis=1)
             else:# because the frames of flow is one less than that of rgb
                 features = np.concatenate((features1[:-1], features2), axis=1)
-        elif self.modality == 'MIX2':
+       elif self.modality == 'MIX2':
             features1 = np.array(np.load(self.list[index].strip('\n')), dtype=np.float32)
             features2 = np.array(np.load(self.audio_list[index//5].strip('\n')), dtype=np.float32)
+            if features1.shape[0] == features2.shape[0]:
+                features = np.concatenate((features1, features2),axis=1)
+            else:# because the frames of flow is one less than that of rgb
+                min_len = min(features1.shape[0], features2.shape[0])
+                features1 = features1[:min_len]
+                features2 = features2[:min_len]
+                features = np.concatenate((features1[:-1], features2), axis=1)
+            features = np.concatenate((features1, features2), axis=1)
         elif self.modality == 'MIX3':
             features1 = np.array(np.load(self.list[index].strip('\n')), dtype=np.float32)
             features2 = np.array(np.load(self.audio_list[index//5].strip('\n')), dtype=np.float32)
+            
             if features1.shape[0] == features2.shape[0]:
                 features = np.concatenate((features1, features2),axis=1)
             else:# because the frames of flow is one less than that of rgb
@@ -204,59 +224,56 @@ def create_data_loaders(args):
 
     return train_loader, val_loader, test_loader
 
-train_loader, val_loader, test_loader = create_data_loaders(args)
 
-def create_single_modality_data_loaders(args, modality='AUDIO'):
+def create_single_modality_data_loaders(args):
     """
     Create train, validation and test data loaders for a single modality
     """
-    print(f"Creating {modality} data loaders...")
+    print(f"Creating {args.modality} data loaders...")
 
     # Create new args with only needed attributes
-    args_new = Args()
-    args_new.modality = modality
 
     # List files needed for train/val/test splits
-    if modality == 'AUDIO':
-        args_new.train_audio_list = args.train_audio_list
-        args_new.val_audio_list = args.val_audio_list
-        args_new.test_audio_list = args.test_audio_list
-    elif modality == 'RGB':
-        args_new.train_rgb_list = args.train_rgb_list
-        args_new.val_rgb_list = args.val_rgb_list
-        args_new.test_rgb_list = args.test_rgb_list
-    elif modality == 'FLOW':
-        args_new.train_flow_list = args.train_flow_list
-        args_new.val_flow_list = args.val_flow_list
-        args_new.test_flow_list = args.test_flow_list
+    if args.modality == 'AUDIO':
+        args.train_audio_list = args.train_audio_list
+        args.val_audio_list = args.val_audio_list
+        args.test_audio_list = args.test_audio_list
+    elif args.modality == 'RGB':
+        args.train_rgb_list = args.train_rgb_list
+        args.val_rgb_list = args.val_rgb_list
+        args.test_rgb_list = args.test_rgb_list
+    elif args.modality == 'FLOW':
+        args.train_flow_list = args.train_flow_list
+        args.val_flow_list = args.val_flow_list
+        args.test_flow_list = args.test_flow_list
 
     # Create data loaders
-    train_dataset = Dataset(args_new, mode='train')
+    train_dataset = Dataset(args, mode='train')
     train_loader = DataLoader(
         train_dataset,
-        batch_size=args_new.batch_size,
+        batch_size=args.batch_size,
         shuffle=True,
-        num_workers=args_new.workers,
+        num_workers=args.workers,
         pin_memory=True
     )
     print(f"Train loader created with {len(train_dataset)} samples")
 
-    val_dataset = Dataset(args_new, mode='val')
+    val_dataset = Dataset(args, mode='val')
     val_loader = DataLoader(
         val_dataset,
-        batch_size=args_new.batch_size,
+        batch_size=args.batch_size,
         shuffle=False,
-        num_workers=args_new.workers,
+        num_workers=args.workers,
         pin_memory=True
     )
     print(f"Validation loader created with {len(val_dataset)} samples")
 
-    test_dataset = Dataset(args_new, mode='test')
+    test_dataset = Dataset(args, mode='test')
     test_loader = DataLoader(
         test_dataset,
         batch_size=1,
         shuffle=False,
-        num_workers=args_new.workers,
+        num_workers=args.workers,
         pin_memory=True
     )
     print(f"Test loader created with {len(test_dataset)} samples")
@@ -335,7 +352,7 @@ def train(dataloader, model, optimizer, scheduler, criterion, device, is_topk, v
         count += 1
 
         # Print training loss every 100 steps
-        if (i + 1) % 100 == 0:
+        if (i + 1) % 2 == 0:
             avg_train_loss = running_loss / count
             print(f"Step {i+1}: Average Training Loss: {avg_train_loss:.4f}")
             running_loss = 0.0
@@ -376,9 +393,6 @@ def test(dataloader, model, device):
         pred = list(pred.cpu().detach().numpy())
         pred2 = list(pred2.cpu().detach().numpy())
 
-
-
-
         precision, recall, th = precision_recall_curve(list(gt), pred)
         pr_auc = auc(recall, precision)
         precision, recall, th = precision_recall_curve(list(gt), pred2)
@@ -396,34 +410,27 @@ if __name__ == '__main__':
     split_data = create_splits(aligned_files)
 
         # Write list files
-    write_list_files(split_data, aligned_files, "/export/fs05/bodoom1/dl_proj/final_dl/list")
+    write_list_files(split_data, aligned_files, "/export/fs05/bodoom1/dl_proj/final_dl/list_exports")
 
     train_loader, val_loader, test_loader = create_single_modality_data_loaders(args)
+    print("Train loader size", len(train_loader))
 
     
         
 
     device = torch.device("cuda")
-    # train_loader = DataLoader(Dataset(args, mode='train'),
-    #                         batch_size=args.batch_size, shuffle=True,
-    #                         num_workers=args.workers, pin_memory=True)
-    # test_loader = DataLoader(Dataset(args, mode='test'),
-    #                         batch_size=5, shuffle=False,
-    #                         num_workers=args.workers, pin_memory=True)
-
-
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     model = Model(args)
     model = model.cuda()
 
-    for name, value in model.named_parameters():
-        print(name)
+    # for name, value in model.named_parameters():
+    #     print(name)
     approximator_param = list(map(id, model.approximator.parameters()))
     approximator_param += list(map(id, model.conv1d_approximator.parameters()))
     base_param = filter(lambda p: id(p) not in approximator_param, model.parameters())
 
-    if not os.path.exists('./ckpt'):
-        os.makedirs('./ckpt')
+    if not os.path.exists(f'/export/fs05/bodoom1/dl_proj/ckpt_{arg.modality.lower()}/'):
+        os.makedirs(f'/export/fs05/bodoom1/dl_proj/ckpt_{arg.modality.lower()}/')
     optimizer = optim.Adam([{'params': base_param},
                             {'params': model.approximator.parameters(), 'lr': args.lr / 2},
                             {'params': model.conv1d_approximator.parameters(), 'lr': args.lr / 2},
@@ -438,10 +445,10 @@ if __name__ == '__main__':
     print('Random initalization: offline pr_auc:{0:.4}; online pr_auc:{1:.4}\n'.format(pr_auc, pr_auc_online))
     for epoch in range(args.max_epoch): 
         st = time.time()
-        model = train(train_loader, model, optimizer, scheduler, criterion, device, is_topk)
+        model = train(train_loader, model, optimizer, scheduler, criterion, device, is_topk, val_loader)
         if epoch % 2 == 0 and not epoch == 0:
-            torch.save(model.state_dict(), '/export/fs05/bodoom1/dl_proj/ckpt/'+args.model_name+'{}.pth'.format(epoch))
+            torch.save(model.state_dict(), f'/export/fs05/bodoom1/dl_proj/ckpt_{arg.modality.lower()}/'+args.model_name+'{}.pth'.format(epoch))
 
-        pr_auc, pr_auc_online = test(test_loader, model, device)
-        print('Epoch {0}/{1}: offline pr_auc:{2:.4}; online pr_auc:{3:.4}\n'.format(epoch, args.max_epoch, pr_auc, pr_auc_online))
-    torch.save(model.state_dict(), '/export/fs05/bodoom1/dl_proj/ckpt/' + args.model_name + '.pth')
+    pr_auc, pr_auc_online = test(test_loader, model, device)
+    print('Epoch {0}/{1}: offline pr_auc:{2:.4}; online pr_auc:{3:.4}\n'.format(epoch, args.max_epoch, pr_auc, pr_auc_online))
+    torch.save(model.state_dict(), f'/export/fs05/bodoom1/dl_proj/ckpt_{arg.modality.lower()}/' + args.model_name + '.pth')
