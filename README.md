@@ -29,3 +29,7 @@ LINKS TO FULLY TRAINED VAE
 look for best_trained_vae.pkl or the latest .pt file
 
 https://drive.google.com/file/d/17gNDWn7ma2n0ZQ915PtpyDsdRR9fbei4/view?usp=sharing
+
+dir link:
+
+https://drive.google.com/drive/folders/1H9gnKE_GLw7Y3C4FToKZ2qNDrvJwSWYu?usp=drive_link
