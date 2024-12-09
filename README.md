@@ -39,3 +39,7 @@ these saved models with training history can be found here (shouhld be the same 
 https://drive.google.com/file/d/11Xb_j7qbA4kJAckCAQYzK-wuQVjIHuda/view?usp=sharing
 
 Additionally, i trained the VAE on the cluster on single modalities (audio, rgb). those training scripts are also new and included in the latest push.
+
+Here is a google drive dir that contains the training scripts and the best trained single modality vae models: 
+https://drive.google.com/drive/folders/1F3M0bkdY41iF9MiXBvj_TFXI_x-HbQDA?usp=sharing
+
