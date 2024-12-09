@@ -33,3 +33,9 @@ https://drive.google.com/file/d/17gNDWn7ma2n0ZQ915PtpyDsdRR9fbei4/view?usp=shari
 dir link:
 
 https://drive.google.com/drive/folders/1H9gnKE_GLw7Y3C4FToKZ2qNDrvJwSWYu?usp=drive_link
+
+i also added a version of the model that tracks training history so that loss plots can be made. there's a plotting script plot.py that you supply a .pt model checkpoint to:
+these saved models with training history can be found here (shouhld be the same as the dir above, but with some stochastic variation from runs, nothing in the code changed functionally)
+https://drive.google.com/file/d/11Xb_j7qbA4kJAckCAQYzK-wuQVjIHuda/view?usp=sharing
+
+Additionally, i trained the VAE on the cluster on single modalities (audio, rgb). those training scripts are also new and included in the latest push.

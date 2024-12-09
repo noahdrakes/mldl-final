@@ -1,0 +1,1355 @@
+Creating normal-only data loaders...
+Normal train loader created with 1664 samples
+Normal validation loader created with 385 samples
+Normal test loader created with 300 samples
+Epoch 1/500:
+Training - Loss: 5562.0734, Recon: 5454.7555, KL: 107.3179
+Validation - Loss: 4914.1801, Recon: 4892.8011, KL: 21.3791
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142238.pt
+Epoch 2/500:
+Training - Loss: 5270.5081, Recon: 5186.8942, KL: 83.6139
+Validation - Loss: 4846.2041, Recon: 4812.9479, KL: 33.2563
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142238.pt
+Epoch 3/500:
+Training - Loss: 5148.8691, Recon: 5101.1253, KL: 47.7438
+Validation - Loss: 4831.5962, Recon: 4795.3916, KL: 36.2045
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142239.pt
+Epoch 4/500:
+Training - Loss: 5070.5122, Recon: 5027.6525, KL: 42.8596
+Validation - Loss: 4719.8269, Recon: 4689.3976, KL: 30.4293
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142240.pt
+Epoch 5/500:
+Training - Loss: 4973.1500, Recon: 4932.1213, KL: 41.0287
+Validation - Loss: 4674.2513, Recon: 4637.1075, KL: 37.1438
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142240.pt
+Epoch 6/500:
+Training - Loss: 4898.2598, Recon: 4857.9149, KL: 40.3449
+Validation - Loss: 4497.6430, Recon: 4465.4170, KL: 32.2259
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142241.pt
+Epoch 7/500:
+Training - Loss: 4814.5294, Recon: 4774.6362, KL: 39.8932
+Validation - Loss: 4574.1348, Recon: 4534.7913, KL: 39.3436
+
+Epoch 8/500:
+Training - Loss: 4741.9046, Recon: 4702.2464, KL: 39.6582
+Validation - Loss: 4459.0290, Recon: 4425.9646, KL: 33.0644
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142242.pt
+Epoch 9/500:
+Training - Loss: 4680.1007, Recon: 4640.6193, KL: 39.4814
+Validation - Loss: 4398.0365, Recon: 4362.2400, KL: 35.7964
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142242.pt
+Epoch 10/500:
+Training - Loss: 4606.0195, Recon: 4566.6471, KL: 39.3723
+Validation - Loss: 4335.2745, Recon: 4300.8782, KL: 34.3963
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142243.pt
+Epoch 11/500:
+Training - Loss: 4526.1349, Recon: 4487.7705, KL: 38.3645
+Validation - Loss: 4297.5276, Recon: 4257.6235, KL: 39.9042
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142244.pt
+Epoch 12/500:
+Training - Loss: 4474.1106, Recon: 4436.6887, KL: 37.4220
+Validation - Loss: 4211.7255, Recon: 4177.0108, KL: 34.7147
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142244.pt
+Epoch 13/500:
+Training - Loss: 4414.6959, Recon: 4378.2541, KL: 36.4419
+Validation - Loss: 4134.2872, Recon: 4102.0986, KL: 32.1885
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142245.pt
+Epoch 14/500:
+Training - Loss: 4352.9114, Recon: 4317.2177, KL: 35.6937
+Validation - Loss: 4068.2088, Recon: 4037.4816, KL: 30.7271
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142245.pt
+Epoch 15/500:
+Training - Loss: 4284.8605, Recon: 4249.9576, KL: 34.9029
+Validation - Loss: 4013.9543, Recon: 3982.2174, KL: 31.7368
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142246.pt
+Epoch 16/500:
+Training - Loss: 4236.3485, Recon: 4202.2335, KL: 34.1150
+Validation - Loss: 4002.9426, Recon: 3969.5012, KL: 33.4414
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142246.pt
+Epoch 17/500:
+Training - Loss: 4163.3494, Recon: 4129.7823, KL: 33.5671
+Validation - Loss: 3849.8180, Recon: 3823.0194, KL: 26.7985
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142247.pt
+Epoch 18/500:
+Training - Loss: 4109.9683, Recon: 4076.7081, KL: 33.2603
+Validation - Loss: 3895.2303, Recon: 3861.8979, KL: 33.3323
+
+Epoch 19/500:
+Training - Loss: 4052.1083, Recon: 4019.8347, KL: 32.2736
+Validation - Loss: 3835.0946, Recon: 3801.7067, KL: 33.3878
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142248.pt
+Epoch 20/500:
+Training - Loss: 3987.3812, Recon: 3955.4335, KL: 31.9477
+Validation - Loss: 3811.0767, Recon: 3779.4262, KL: 31.6504
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142249.pt
+Epoch 21/500:
+Training - Loss: 3942.7555, Recon: 3911.4780, KL: 31.2775
+Validation - Loss: 3760.7785, Recon: 3727.1516, KL: 33.6269
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142249.pt
+Epoch 22/500:
+Training - Loss: 3899.1178, Recon: 3867.3387, KL: 31.7791
+Validation - Loss: 3518.6357, Recon: 3492.6095, KL: 26.0262
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142250.pt
+Epoch 23/500:
+Training - Loss: 3817.7699, Recon: 3786.0409, KL: 31.7290
+Validation - Loss: 3692.4024, Recon: 3660.9837, KL: 31.4187
+
+Epoch 24/500:
+Training - Loss: 3776.6930, Recon: 3745.3155, KL: 31.3775
+Validation - Loss: 3723.6546, Recon: 3693.4727, KL: 30.1819
+
+Epoch 25/500:
+Training - Loss: 3732.8486, Recon: 3702.0421, KL: 30.8065
+Validation - Loss: 3390.5678, Recon: 3361.6878, KL: 28.8800
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142252.pt
+Epoch 26/500:
+Training - Loss: 3706.4675, Recon: 3675.8171, KL: 30.6504
+Validation - Loss: 3520.3076, Recon: 3488.3130, KL: 31.9946
+
+Epoch 27/500:
+Training - Loss: 3651.4604, Recon: 3620.7734, KL: 30.6871
+Validation - Loss: 3663.0210, Recon: 3618.5852, KL: 44.4358
+
+Epoch 28/500:
+Training - Loss: 3607.0211, Recon: 3576.5932, KL: 30.4280
+Validation - Loss: 3556.8939, Recon: 3512.7603, KL: 44.1337
+
+Epoch 29/500:
+Training - Loss: 3547.5891, Recon: 3517.4140, KL: 30.1751
+Validation - Loss: 3278.1123, Recon: 3251.6519, KL: 26.4605
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142254.pt
+Epoch 30/500:
+Training - Loss: 3502.4357, Recon: 3472.4562, KL: 29.9795
+Validation - Loss: 3359.9614, Recon: 3330.9088, KL: 29.0526
+
+Epoch 31/500:
+Training - Loss: 3453.1845, Recon: 3423.1356, KL: 30.0488
+Validation - Loss: 3303.2511, Recon: 3274.6198, KL: 28.6314
+
+Epoch 32/500:
+Training - Loss: 3415.4909, Recon: 3385.4049, KL: 30.0859
+Validation - Loss: 3215.1777, Recon: 3190.5629, KL: 24.6148
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142256.pt
+Epoch 33/500:
+Training - Loss: 3390.0951, Recon: 3360.6666, KL: 29.4285
+Validation - Loss: 3243.0483, Recon: 3215.2369, KL: 27.8115
+
+Epoch 34/500:
+Training - Loss: 3335.8413, Recon: 3306.2303, KL: 29.6110
+Validation - Loss: 3172.1455, Recon: 3144.7903, KL: 27.3552
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142257.pt
+Epoch 35/500:
+Training - Loss: 3293.4492, Recon: 3263.8029, KL: 29.6462
+Validation - Loss: 3014.2768, Recon: 2989.0440, KL: 25.2328
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142258.pt
+Epoch 36/500:
+Training - Loss: 3265.6896, Recon: 3235.8547, KL: 29.8349
+Validation - Loss: 3047.6561, Recon: 3018.3122, KL: 29.3438
+
+Epoch 37/500:
+Training - Loss: 3224.1753, Recon: 3194.4974, KL: 29.6779
+Validation - Loss: 3066.6480, Recon: 3039.2435, KL: 27.4045
+
+Epoch 38/500:
+Training - Loss: 3176.6743, Recon: 3146.7476, KL: 29.9267
+Validation - Loss: 3072.2988, Recon: 3046.2713, KL: 26.0275
+
+Epoch 39/500:
+Training - Loss: 3136.7597, Recon: 3106.8562, KL: 29.9035
+Validation - Loss: 2947.4763, Recon: 2919.6342, KL: 27.8421
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142300.pt
+Epoch 40/500:
+Training - Loss: 3132.0876, Recon: 3102.3176, KL: 29.7700
+Validation - Loss: 2964.2644, Recon: 2936.2114, KL: 28.0530
+
+Epoch 41/500:
+Training - Loss: 3095.9284, Recon: 3066.1945, KL: 29.7340
+Validation - Loss: 2859.5158, Recon: 2832.7073, KL: 26.8085
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142301.pt
+Epoch 42/500:
+Training - Loss: 3028.1198, Recon: 2998.3194, KL: 29.8004
+Validation - Loss: 2883.2984, Recon: 2855.5809, KL: 27.7175
+
+Epoch 43/500:
+Training - Loss: 3008.5463, Recon: 2978.5984, KL: 29.9479
+Validation - Loss: 2830.6406, Recon: 2803.5005, KL: 27.1400
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142302.pt
+Epoch 44/500:
+Training - Loss: 2959.0188, Recon: 2929.3374, KL: 29.6814
+Validation - Loss: 2801.0675, Recon: 2775.3294, KL: 25.7381
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142303.pt
+Epoch 45/500:
+Training - Loss: 2929.3691, Recon: 2899.2730, KL: 30.0960
+Validation - Loss: 2813.2506, Recon: 2784.0393, KL: 29.2113
+
+Epoch 46/500:
+Training - Loss: 2906.3220, Recon: 2876.4666, KL: 29.8554
+Validation - Loss: 2730.1682, Recon: 2703.1456, KL: 27.0227
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142304.pt
+Epoch 47/500:
+Training - Loss: 2866.4181, Recon: 2836.3520, KL: 30.0661
+Validation - Loss: 2764.8184, Recon: 2733.7160, KL: 31.1024
+
+Epoch 48/500:
+Training - Loss: 2844.1603, Recon: 2814.1169, KL: 30.0434
+Validation - Loss: 2681.7753, Recon: 2652.9439, KL: 28.8314
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142305.pt
+Epoch 49/500:
+Training - Loss: 2823.4105, Recon: 2793.0647, KL: 30.3458
+Validation - Loss: 2648.6243, Recon: 2619.6366, KL: 28.9878
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142306.pt
+Epoch 50/500:
+Training - Loss: 2777.4076, Recon: 2747.5213, KL: 29.8864
+Validation - Loss: 2648.6287, Recon: 2617.1310, KL: 31.4978
+
+Epoch 51/500:
+Training - Loss: 2751.1378, Recon: 2720.9231, KL: 30.2147
+Validation - Loss: 2634.8073, Recon: 2604.3941, KL: 30.4132
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142307.pt
+Epoch 52/500:
+Training - Loss: 2721.0838, Recon: 2691.0154, KL: 30.0684
+Validation - Loss: 2579.0981, Recon: 2548.0832, KL: 31.0149
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142307.pt
+Epoch 53/500:
+Training - Loss: 2700.7371, Recon: 2670.4087, KL: 30.3284
+Validation - Loss: 2535.5189, Recon: 2506.0661, KL: 29.4528
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142308.pt
+Epoch 54/500:
+Training - Loss: 2694.9052, Recon: 2664.4946, KL: 30.4107
+Validation - Loss: 2571.2459, Recon: 2540.9048, KL: 30.3410
+
+Epoch 55/500:
+Training - Loss: 2656.6761, Recon: 2626.2408, KL: 30.4354
+Validation - Loss: 2490.8973, Recon: 2461.7050, KL: 29.1923
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142309.pt
+Epoch 56/500:
+Training - Loss: 2623.4526, Recon: 2592.8583, KL: 30.5943
+Validation - Loss: 2603.1136, Recon: 2563.9963, KL: 39.1173
+
+Epoch 57/500:
+Training - Loss: 2596.3168, Recon: 2565.8689, KL: 30.4478
+Validation - Loss: 2406.5975, Recon: 2378.6338, KL: 27.9637
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142310.pt
+Epoch 58/500:
+Training - Loss: 2565.9454, Recon: 2535.4746, KL: 30.4708
+Validation - Loss: 2421.5221, Recon: 2393.7025, KL: 27.8195
+
+Epoch 59/500:
+Training - Loss: 2535.0209, Recon: 2504.3604, KL: 30.6605
+Validation - Loss: 2419.2923, Recon: 2389.8401, KL: 29.4522
+
+Epoch 60/500:
+Training - Loss: 2505.3508, Recon: 2474.5156, KL: 30.8351
+Validation - Loss: 2390.2696, Recon: 2360.3497, KL: 29.9198
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142312.pt
+Epoch 61/500:
+Training - Loss: 2488.8076, Recon: 2458.0350, KL: 30.7726
+Validation - Loss: 2351.7393, Recon: 2321.3851, KL: 30.3542
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142313.pt
+Epoch 62/500:
+Training - Loss: 2466.8921, Recon: 2435.8439, KL: 31.0482
+Validation - Loss: 2335.4459, Recon: 2307.5949, KL: 27.8511
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142313.pt
+Epoch 63/500:
+Training - Loss: 2433.4827, Recon: 2402.4856, KL: 30.9971
+Validation - Loss: 2309.5889, Recon: 2280.0318, KL: 29.5571
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142314.pt
+Epoch 64/500:
+Training - Loss: 2411.9062, Recon: 2380.5840, KL: 31.3222
+Validation - Loss: 2312.5062, Recon: 2281.5865, KL: 30.9196
+
+Epoch 65/500:
+Training - Loss: 2416.3972, Recon: 2385.2329, KL: 31.1642
+Validation - Loss: 2295.5352, Recon: 2262.0429, KL: 33.4923
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142315.pt
+Epoch 66/500:
+Training - Loss: 2376.9336, Recon: 2345.7718, KL: 31.1618
+Validation - Loss: 2228.5508, Recon: 2198.7336, KL: 29.8172
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142316.pt
+Epoch 67/500:
+Training - Loss: 2349.6333, Recon: 2318.3915, KL: 31.2418
+Validation - Loss: 2218.5709, Recon: 2188.5898, KL: 29.9811
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142316.pt
+Epoch 68/500:
+Training - Loss: 2328.8665, Recon: 2297.3854, KL: 31.4810
+Validation - Loss: 2246.8738, Recon: 2214.7011, KL: 32.1726
+
+Epoch 69/500:
+Training - Loss: 2309.2594, Recon: 2277.6853, KL: 31.5742
+Validation - Loss: 2202.4490, Recon: 2173.0990, KL: 29.3500
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142318.pt
+Epoch 70/500:
+Training - Loss: 2282.4007, Recon: 2250.8470, KL: 31.5538
+Validation - Loss: 2162.1484, Recon: 2132.6455, KL: 29.5030
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142318.pt
+Epoch 71/500:
+Training - Loss: 2266.4185, Recon: 2234.7122, KL: 31.7064
+Validation - Loss: 2189.8047, Recon: 2158.6855, KL: 31.1192
+
+Epoch 72/500:
+Training - Loss: 2238.4290, Recon: 2206.7582, KL: 31.6708
+Validation - Loss: 2196.7362, Recon: 2159.4979, KL: 37.2383
+
+Epoch 73/500:
+Training - Loss: 2225.5321, Recon: 2193.7503, KL: 31.7818
+Validation - Loss: 2084.3582, Recon: 2053.4775, KL: 30.8807
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142320.pt
+Epoch 74/500:
+Training - Loss: 2197.0716, Recon: 2165.2652, KL: 31.8063
+Validation - Loss: 2110.2125, Recon: 2077.8045, KL: 32.4080
+
+Epoch 75/500:
+Training - Loss: 2182.4116, Recon: 2150.5772, KL: 31.8344
+Validation - Loss: 2061.7938, Recon: 2031.7148, KL: 30.0790
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142321.pt
+Epoch 76/500:
+Training - Loss: 2164.7644, Recon: 2132.7243, KL: 32.0400
+Validation - Loss: 2077.6927, Recon: 2045.8971, KL: 31.7956
+
+Epoch 77/500:
+Training - Loss: 2148.7852, Recon: 2116.7743, KL: 32.0109
+Validation - Loss: 2023.9357, Recon: 1992.7445, KL: 31.1912
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142322.pt
+Epoch 78/500:
+Training - Loss: 2131.2283, Recon: 2099.1512, KL: 32.0771
+Validation - Loss: 2003.7243, Recon: 1972.2060, KL: 31.5183
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142323.pt
+Epoch 79/500:
+Training - Loss: 2112.5952, Recon: 2080.4200, KL: 32.1752
+Validation - Loss: 2003.8247, Recon: 1973.5434, KL: 30.2813
+
+Epoch 80/500:
+Training - Loss: 2090.7075, Recon: 2058.3027, KL: 32.4048
+Validation - Loss: 1983.0573, Recon: 1952.2311, KL: 30.8262
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142324.pt
+Epoch 81/500:
+Training - Loss: 2077.2811, Recon: 2044.6724, KL: 32.6088
+Validation - Loss: 1986.3816, Recon: 1954.7966, KL: 31.5850
+
+Epoch 82/500:
+Training - Loss: 2059.4847, Recon: 2026.8680, KL: 32.6167
+Validation - Loss: 1962.0169, Recon: 1929.3123, KL: 32.7045
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142325.pt
+Epoch 83/500:
+Training - Loss: 2046.0202, Recon: 2013.5327, KL: 32.4875
+Validation - Loss: 1969.4086, Recon: 1937.4330, KL: 31.9756
+
+Epoch 84/500:
+Training - Loss: 2033.7913, Recon: 2001.2546, KL: 32.5367
+Validation - Loss: 1964.6610, Recon: 1930.7131, KL: 33.9479
+
+Epoch 85/500:
+Training - Loss: 2014.3534, Recon: 1981.6078, KL: 32.7456
+Validation - Loss: 1951.8500, Recon: 1918.6807, KL: 33.1692
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142327.pt
+Epoch 86/500:
+Training - Loss: 2003.0422, Recon: 1970.3985, KL: 32.6437
+Validation - Loss: 1921.5714, Recon: 1887.2327, KL: 34.3387
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142327.pt
+Epoch 87/500:
+Training - Loss: 1985.3746, Recon: 1952.6394, KL: 32.7352
+Validation - Loss: 1867.0923, Recon: 1835.5302, KL: 31.5621
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142328.pt
+Epoch 88/500:
+Training - Loss: 1969.3766, Recon: 1936.6096, KL: 32.7670
+Validation - Loss: 1870.5946, Recon: 1839.9896, KL: 30.6050
+
+Epoch 89/500:
+Training - Loss: 1952.4120, Recon: 1919.5224, KL: 32.8896
+Validation - Loss: 1858.0270, Recon: 1826.9796, KL: 31.0475
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142329.pt
+Epoch 90/500:
+Training - Loss: 1932.6311, Recon: 1899.5238, KL: 33.1072
+Validation - Loss: 1844.8201, Recon: 1812.7342, KL: 32.0860
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142330.pt
+Epoch 91/500:
+Training - Loss: 1915.5656, Recon: 1882.3745, KL: 33.1912
+Validation - Loss: 1841.3947, Recon: 1808.1761, KL: 33.2186
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142330.pt
+Epoch 92/500:
+Training - Loss: 1907.6439, Recon: 1874.4377, KL: 33.2062
+Validation - Loss: 1802.3727, Recon: 1769.9919, KL: 32.3808
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142331.pt
+Epoch 93/500:
+Training - Loss: 1888.1720, Recon: 1854.8131, KL: 33.3589
+Validation - Loss: 1792.1043, Recon: 1761.0189, KL: 31.0854
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142332.pt
+Epoch 94/500:
+Training - Loss: 1875.4504, Recon: 1842.0829, KL: 33.3674
+Validation - Loss: 1794.7251, Recon: 1762.0903, KL: 32.6348
+
+Epoch 95/500:
+Training - Loss: 1855.7897, Recon: 1822.3422, KL: 33.4475
+Validation - Loss: 1765.0326, Recon: 1733.9422, KL: 31.0905
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142333.pt
+Epoch 96/500:
+Training - Loss: 1853.9317, Recon: 1820.3733, KL: 33.5585
+Validation - Loss: 1762.6423, Recon: 1730.7694, KL: 31.8728
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142333.pt
+Epoch 97/500:
+Training - Loss: 1835.4571, Recon: 1801.7771, KL: 33.6800
+Validation - Loss: 1747.7349, Recon: 1715.3720, KL: 32.3629
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142334.pt
+Epoch 98/500:
+Training - Loss: 1827.1309, Recon: 1793.4810, KL: 33.6499
+Validation - Loss: 1756.1840, Recon: 1722.8940, KL: 33.2900
+
+Epoch 99/500:
+Training - Loss: 1818.6553, Recon: 1784.9589, KL: 33.6963
+Validation - Loss: 1724.5293, Recon: 1690.7130, KL: 33.8163
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142335.pt
+Epoch 100/500:
+Training - Loss: 1801.0963, Recon: 1767.3100, KL: 33.7863
+Validation - Loss: 1711.6922, Recon: 1678.5656, KL: 33.1266
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142336.pt
+Epoch 101/500:
+Training - Loss: 1790.5463, Recon: 1756.7150, KL: 33.8313
+Validation - Loss: 1693.9832, Recon: 1661.6789, KL: 32.3043
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142336.pt
+Epoch 102/500:
+Training - Loss: 1771.9135, Recon: 1737.9698, KL: 33.9436
+Validation - Loss: 1692.1110, Recon: 1659.4614, KL: 32.6496
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142337.pt
+Epoch 103/500:
+Training - Loss: 1766.0180, Recon: 1732.0910, KL: 33.9270
+Validation - Loss: 1697.8031, Recon: 1662.4902, KL: 35.3129
+
+Epoch 104/500:
+Training - Loss: 1753.9336, Recon: 1719.9178, KL: 34.0158
+Validation - Loss: 1672.2898, Recon: 1637.5975, KL: 34.6923
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142338.pt
+Epoch 105/500:
+Training - Loss: 1749.1953, Recon: 1715.0352, KL: 34.1600
+Validation - Loss: 1659.0347, Recon: 1623.5417, KL: 35.4930
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142339.pt
+Epoch 106/500:
+Training - Loss: 1726.3289, Recon: 1692.1056, KL: 34.2234
+Validation - Loss: 1650.1613, Recon: 1614.7736, KL: 35.3877
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142339.pt
+Epoch 107/500:
+Training - Loss: 1714.3040, Recon: 1679.9763, KL: 34.3276
+Validation - Loss: 1635.6460, Recon: 1600.9293, KL: 34.7167
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142340.pt
+Epoch 108/500:
+Training - Loss: 1717.2515, Recon: 1682.8638, KL: 34.3877
+Validation - Loss: 1628.6147, Recon: 1594.2324, KL: 34.3823
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142341.pt
+Epoch 109/500:
+Training - Loss: 1694.2262, Recon: 1659.7905, KL: 34.4357
+Validation - Loss: 1568.4331, Recon: 1537.0171, KL: 31.4160
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142341.pt
+Epoch 110/500:
+Training - Loss: 1687.0382, Recon: 1652.4408, KL: 34.5974
+Validation - Loss: 1563.9274, Recon: 1531.5066, KL: 32.4208
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142342.pt
+Epoch 111/500:
+Training - Loss: 1830.3187, Recon: 1795.6530, KL: 34.6657
+Validation - Loss: 1893.2856, Recon: 1836.2242, KL: 57.0614
+
+Epoch 112/500:
+Training - Loss: 1745.7831, Recon: 1711.1944, KL: 34.5887
+Validation - Loss: 1625.6929, Recon: 1590.1895, KL: 35.5034
+
+Epoch 113/500:
+Training - Loss: 1703.9637, Recon: 1669.3256, KL: 34.6381
+Validation - Loss: 1574.3694, Recon: 1542.3482, KL: 32.0212
+
+Epoch 114/500:
+Training - Loss: 1675.0105, Recon: 1640.2988, KL: 34.7117
+Validation - Loss: 1564.3695, Recon: 1531.4243, KL: 32.9452
+
+Epoch 115/500:
+Training - Loss: 1654.3868, Recon: 1619.5845, KL: 34.8023
+Validation - Loss: 1557.0273, Recon: 1524.7106, KL: 32.3167
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142345.pt
+Epoch 116/500:
+Training - Loss: 1636.3427, Recon: 1601.5036, KL: 34.8391
+Validation - Loss: 1541.3176, Recon: 1508.5679, KL: 32.7497
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142345.pt
+Epoch 117/500:
+Training - Loss: 1623.9644, Recon: 1589.0703, KL: 34.8940
+Validation - Loss: 1524.6119, Recon: 1493.5067, KL: 31.1052
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142346.pt
+Epoch 118/500:
+Training - Loss: 1615.6230, Recon: 1580.6498, KL: 34.9732
+Validation - Loss: 1531.4361, Recon: 1497.6910, KL: 33.7451
+
+Epoch 119/500:
+Training - Loss: 1602.6783, Recon: 1567.6182, KL: 35.0601
+Validation - Loss: 1505.5758, Recon: 1471.7667, KL: 33.8091
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142347.pt
+Epoch 120/500:
+Training - Loss: 1590.4828, Recon: 1555.3589, KL: 35.1240
+Validation - Loss: 1528.2464, Recon: 1492.2414, KL: 36.0050
+
+Epoch 121/500:
+Training - Loss: 1581.0098, Recon: 1545.8297, KL: 35.1800
+Validation - Loss: 1487.1721, Recon: 1454.3407, KL: 32.8314
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142348.pt
+Epoch 122/500:
+Training - Loss: 1568.2512, Recon: 1532.9383, KL: 35.3129
+Validation - Loss: 1472.1902, Recon: 1439.9512, KL: 32.2390
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142349.pt
+Epoch 123/500:
+Training - Loss: 1557.0258, Recon: 1521.7020, KL: 35.3239
+Validation - Loss: 1471.5369, Recon: 1438.6807, KL: 32.8562
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142349.pt
+Epoch 124/500:
+Training - Loss: 1553.6334, Recon: 1518.2426, KL: 35.3907
+Validation - Loss: 1455.9874, Recon: 1423.1154, KL: 32.8721
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142350.pt
+Epoch 125/500:
+Training - Loss: 1542.7308, Recon: 1507.2748, KL: 35.4560
+Validation - Loss: 1460.5921, Recon: 1426.3113, KL: 34.2808
+
+Epoch 126/500:
+Training - Loss: 1530.0942, Recon: 1494.5639, KL: 35.5303
+Validation - Loss: 1449.3004, Recon: 1415.5402, KL: 33.7602
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142351.pt
+Epoch 127/500:
+Training - Loss: 1526.6612, Recon: 1490.9764, KL: 35.6848
+Validation - Loss: 1448.3971, Recon: 1413.9373, KL: 34.4598
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142352.pt
+Epoch 128/500:
+Training - Loss: 1515.2819, Recon: 1479.4984, KL: 35.7835
+Validation - Loss: 1428.7459, Recon: 1394.3589, KL: 34.3870
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142352.pt
+Epoch 129/500:
+Training - Loss: 1512.8679, Recon: 1477.0496, KL: 35.8183
+Validation - Loss: 1409.4875, Recon: 1375.3671, KL: 34.1204
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142353.pt
+Epoch 130/500:
+Training - Loss: 1502.9843, Recon: 1467.1270, KL: 35.8572
+Validation - Loss: 1420.8583, Recon: 1386.4884, KL: 34.3699
+
+Epoch 131/500:
+Training - Loss: 1523.0905, Recon: 1486.9849, KL: 36.1056
+Validation - Loss: 1641.2004, Recon: 1596.1683, KL: 45.0320
+
+Epoch 132/500:
+Training - Loss: 1530.7516, Recon: 1494.4928, KL: 36.2588
+Validation - Loss: 1441.3029, Recon: 1402.9532, KL: 38.3497
+
+Epoch 133/500:
+Training - Loss: 1486.3532, Recon: 1450.0069, KL: 36.3464
+Validation - Loss: 1409.3357, Recon: 1374.1109, KL: 35.2248
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142355.pt
+Epoch 134/500:
+Training - Loss: 1477.2163, Recon: 1440.8049, KL: 36.4113
+Validation - Loss: 1387.2001, Recon: 1352.8908, KL: 34.3093
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142356.pt
+Epoch 135/500:
+Training - Loss: 1475.3633, Recon: 1438.9076, KL: 36.4557
+Validation - Loss: 1382.1593, Recon: 1346.2420, KL: 35.9172
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142356.pt
+Epoch 136/500:
+Training - Loss: 1459.5567, Recon: 1423.0455, KL: 36.5112
+Validation - Loss: 1368.0008, Recon: 1333.7019, KL: 34.2989
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142357.pt
+Epoch 137/500:
+Training - Loss: 1456.3324, Recon: 1419.7030, KL: 36.6294
+Validation - Loss: 1372.3709, Recon: 1337.3985, KL: 34.9725
+
+Epoch 138/500:
+Training - Loss: 1441.3101, Recon: 1404.6777, KL: 36.6324
+Validation - Loss: 1357.6512, Recon: 1322.3215, KL: 35.3296
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142358.pt
+Epoch 139/500:
+Training - Loss: 1430.6505, Recon: 1393.9036, KL: 36.7469
+Validation - Loss: 1352.4943, Recon: 1318.0300, KL: 34.4643
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142359.pt
+Epoch 140/500:
+Training - Loss: 1434.3751, Recon: 1397.4948, KL: 36.8803
+Validation - Loss: 1360.5594, Recon: 1324.5826, KL: 35.9768
+
+Epoch 141/500:
+Training - Loss: 1419.9551, Recon: 1383.0390, KL: 36.9162
+Validation - Loss: 1345.8172, Recon: 1309.8703, KL: 35.9469
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142400.pt
+Epoch 142/500:
+Training - Loss: 1412.2044, Recon: 1375.1789, KL: 37.0255
+Validation - Loss: 1325.4622, Recon: 1290.5653, KL: 34.8970
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142400.pt
+Epoch 143/500:
+Training - Loss: 1401.2976, Recon: 1364.2008, KL: 37.0968
+Validation - Loss: 1319.0470, Recon: 1284.0810, KL: 34.9661
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142401.pt
+Epoch 144/500:
+Training - Loss: 1394.9016, Recon: 1357.7283, KL: 37.1733
+Validation - Loss: 1307.4660, Recon: 1272.1278, KL: 35.3382
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142402.pt
+Epoch 145/500:
+Training - Loss: 1382.9512, Recon: 1345.7276, KL: 37.2236
+Validation - Loss: 1308.1519, Recon: 1272.6256, KL: 35.5262
+
+Epoch 146/500:
+Training - Loss: 1385.0004, Recon: 1347.7225, KL: 37.2779
+Validation - Loss: 1311.3786, Recon: 1275.1811, KL: 36.1975
+
+Epoch 147/500:
+Training - Loss: 1379.2834, Recon: 1341.9046, KL: 37.3788
+Validation - Loss: 1282.8114, Recon: 1248.8072, KL: 34.0042
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142403.pt
+Epoch 148/500:
+Training - Loss: 1369.9412, Recon: 1332.4371, KL: 37.5041
+Validation - Loss: 1311.9854, Recon: 1274.4646, KL: 37.5208
+
+Epoch 149/500:
+Training - Loss: 1366.6031, Recon: 1329.0501, KL: 37.5530
+Validation - Loss: 1277.5610, Recon: 1240.8197, KL: 36.7413
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142405.pt
+Epoch 150/500:
+Training - Loss: 1353.3036, Recon: 1315.7096, KL: 37.5940
+Validation - Loss: 1265.1141, Recon: 1229.3284, KL: 35.7857
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142405.pt
+Epoch 151/500:
+Training - Loss: 1353.6262, Recon: 1315.9577, KL: 37.6685
+Validation - Loss: 1272.1881, Recon: 1236.3923, KL: 35.7958
+
+Epoch 152/500:
+Training - Loss: 1337.4542, Recon: 1299.7235, KL: 37.7307
+Validation - Loss: 1263.4755, Recon: 1228.7984, KL: 34.6771
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142406.pt
+Epoch 153/500:
+Training - Loss: 1330.2505, Recon: 1292.4113, KL: 37.8391
+Validation - Loss: 1250.1368, Recon: 1213.7377, KL: 36.3991
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142407.pt
+Epoch 154/500:
+Training - Loss: 1334.0018, Recon: 1296.1326, KL: 37.8692
+Validation - Loss: 1254.4240, Recon: 1218.9361, KL: 35.4879
+
+Epoch 155/500:
+Training - Loss: 1326.8611, Recon: 1288.8946, KL: 37.9665
+Validation - Loss: 1250.9600, Recon: 1213.6409, KL: 37.3192
+
+Epoch 156/500:
+Training - Loss: 1316.7133, Recon: 1278.6379, KL: 38.0754
+Validation - Loss: 1245.0895, Recon: 1208.3472, KL: 36.7422
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142409.pt
+Epoch 157/500:
+Training - Loss: 1318.3334, Recon: 1280.1786, KL: 38.1548
+Validation - Loss: 1241.0322, Recon: 1204.5577, KL: 36.4746
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142409.pt
+Epoch 158/500:
+Training - Loss: 1307.4126, Recon: 1269.1755, KL: 38.2371
+Validation - Loss: 1239.0052, Recon: 1203.4030, KL: 35.6021
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142410.pt
+Epoch 159/500:
+Training - Loss: 1310.1039, Recon: 1271.7838, KL: 38.3201
+Validation - Loss: 1209.5158, Recon: 1172.8977, KL: 36.6181
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142410.pt
+Epoch 160/500:
+Training - Loss: 1300.9798, Recon: 1262.6192, KL: 38.3606
+Validation - Loss: 1214.5125, Recon: 1178.0278, KL: 36.4847
+
+Epoch 161/500:
+Training - Loss: 1299.6858, Recon: 1261.2473, KL: 38.4385
+Validation - Loss: 1223.3042, Recon: 1185.9488, KL: 37.3553
+
+Epoch 162/500:
+Training - Loss: 1292.0956, Recon: 1253.5924, KL: 38.5032
+Validation - Loss: 1202.6700, Recon: 1166.2756, KL: 36.3944
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142412.pt
+Epoch 163/500:
+Training - Loss: 1285.1928, Recon: 1246.6096, KL: 38.5832
+Validation - Loss: 1188.0578, Recon: 1152.0200, KL: 36.0378
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142413.pt
+Epoch 164/500:
+Training - Loss: 1276.7456, Recon: 1238.1156, KL: 38.6300
+Validation - Loss: 1194.7983, Recon: 1158.4423, KL: 36.3560
+
+Epoch 165/500:
+Training - Loss: 1277.5138, Recon: 1238.8019, KL: 38.7119
+Validation - Loss: 1196.9711, Recon: 1159.0714, KL: 37.8997
+
+Epoch 166/500:
+Training - Loss: 1268.9096, Recon: 1230.1208, KL: 38.7888
+Validation - Loss: 1199.0092, Recon: 1161.5004, KL: 37.5088
+
+Epoch 167/500:
+Training - Loss: 1268.6596, Recon: 1229.7980, KL: 38.8616
+Validation - Loss: 1191.4230, Recon: 1153.8757, KL: 37.5473
+
+Epoch 168/500:
+Training - Loss: 1259.0408, Recon: 1220.1751, KL: 38.8657
+Validation - Loss: 1185.6219, Recon: 1148.0127, KL: 37.6093
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142416.pt
+Epoch 169/500:
+Training - Loss: 1252.3465, Recon: 1213.4038, KL: 38.9427
+Validation - Loss: 1182.7934, Recon: 1144.6797, KL: 38.1137
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142416.pt
+Epoch 170/500:
+Training - Loss: 1245.0810, Recon: 1206.1139, KL: 38.9671
+Validation - Loss: 1179.3618, Recon: 1141.7748, KL: 37.5870
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142417.pt
+Epoch 171/500:
+Training - Loss: 1242.7641, Recon: 1203.6933, KL: 39.0708
+Validation - Loss: 1161.4233, Recon: 1124.4324, KL: 36.9909
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142417.pt
+Epoch 172/500:
+Training - Loss: 1247.0106, Recon: 1207.8751, KL: 39.1356
+Validation - Loss: 1156.7870, Recon: 1120.0877, KL: 36.6993
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142418.pt
+Epoch 173/500:
+Training - Loss: 1262.3131, Recon: 1223.1647, KL: 39.1484
+Validation - Loss: 1196.0762, Recon: 1152.8941, KL: 43.1821
+
+Epoch 174/500:
+Training - Loss: 1255.3844, Recon: 1216.2380, KL: 39.1464
+Validation - Loss: 1183.1422, Recon: 1145.6243, KL: 37.5179
+
+Epoch 175/500:
+Training - Loss: 1237.1779, Recon: 1197.9392, KL: 39.2387
+Validation - Loss: 1149.1136, Recon: 1112.0207, KL: 37.0929
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142420.pt
+Epoch 176/500:
+Training - Loss: 1232.4115, Recon: 1193.1033, KL: 39.3082
+Validation - Loss: 1147.9290, Recon: 1111.4773, KL: 36.4517
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142420.pt
+Epoch 177/500:
+Training - Loss: 1224.6166, Recon: 1185.2132, KL: 39.4034
+Validation - Loss: 1140.4595, Recon: 1103.1811, KL: 37.2783
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142421.pt
+Epoch 178/500:
+Training - Loss: 1219.3233, Recon: 1179.8494, KL: 39.4738
+Validation - Loss: 1131.1777, Recon: 1094.4773, KL: 36.7004
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142422.pt
+Epoch 179/500:
+Training - Loss: 1219.5770, Recon: 1180.0216, KL: 39.5554
+Validation - Loss: 1139.2231, Recon: 1101.6653, KL: 37.5578
+
+Epoch 180/500:
+Training - Loss: 1209.5815, Recon: 1169.9534, KL: 39.6281
+Validation - Loss: 1128.7718, Recon: 1091.4835, KL: 37.2883
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142423.pt
+Epoch 181/500:
+Training - Loss: 1204.2916, Recon: 1164.5665, KL: 39.7251
+Validation - Loss: 1129.7885, Recon: 1092.4739, KL: 37.3146
+
+Epoch 182/500:
+Training - Loss: 1198.9902, Recon: 1159.2086, KL: 39.7816
+Validation - Loss: 1127.7630, Recon: 1090.2148, KL: 37.5482
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142424.pt
+Epoch 183/500:
+Training - Loss: 1201.5685, Recon: 1161.6948, KL: 39.8737
+Validation - Loss: 1119.7403, Recon: 1083.1361, KL: 36.6042
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142425.pt
+Epoch 184/500:
+Training - Loss: 1191.9860, Recon: 1152.0584, KL: 39.9277
+Validation - Loss: 1118.8400, Recon: 1080.1852, KL: 38.6548
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142425.pt
+Epoch 185/500:
+Training - Loss: 1199.7027, Recon: 1159.6648, KL: 40.0379
+Validation - Loss: 1120.8708, Recon: 1081.3958, KL: 39.4749
+
+Epoch 186/500:
+Training - Loss: 1188.1995, Recon: 1148.0596, KL: 40.1399
+Validation - Loss: 1106.6266, Recon: 1068.4119, KL: 38.2147
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142426.pt
+Epoch 187/500:
+Training - Loss: 1177.5881, Recon: 1137.3810, KL: 40.2071
+Validation - Loss: 1117.3658, Recon: 1078.3318, KL: 39.0339
+
+Epoch 188/500:
+Training - Loss: 1178.7996, Recon: 1138.5162, KL: 40.2834
+Validation - Loss: 1110.6562, Recon: 1071.3623, KL: 39.2939
+
+Epoch 189/500:
+Training - Loss: 1168.1642, Recon: 1127.8481, KL: 40.3161
+Validation - Loss: 1099.8521, Recon: 1061.6353, KL: 38.2169
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142428.pt
+Epoch 190/500:
+Training - Loss: 1171.3239, Recon: 1130.9636, KL: 40.3603
+Validation - Loss: 1096.8429, Recon: 1058.2690, KL: 38.5739
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142429.pt
+Epoch 191/500:
+Training - Loss: 1166.6206, Recon: 1126.1688, KL: 40.4518
+Validation - Loss: 1096.6117, Recon: 1057.2525, KL: 39.3591
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142429.pt
+Epoch 192/500:
+Training - Loss: 1164.1028, Recon: 1123.5612, KL: 40.5416
+Validation - Loss: 1094.3713, Recon: 1056.5500, KL: 37.8213
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142430.pt
+Epoch 193/500:
+Training - Loss: 1152.5025, Recon: 1111.9042, KL: 40.5984
+Validation - Loss: 1082.7998, Recon: 1044.4872, KL: 38.3126
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142430.pt
+Epoch 194/500:
+Training - Loss: 1156.6304, Recon: 1115.9606, KL: 40.6698
+Validation - Loss: 1081.4591, Recon: 1043.3769, KL: 38.0821
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142431.pt
+Epoch 195/500:
+Training - Loss: 1157.4346, Recon: 1116.6976, KL: 40.7370
+Validation - Loss: 1078.9427, Recon: 1040.5481, KL: 38.3946
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142432.pt
+Epoch 196/500:
+Training - Loss: 1146.9291, Recon: 1106.1457, KL: 40.7834
+Validation - Loss: 1072.0223, Recon: 1033.2183, KL: 38.8040
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142432.pt
+Epoch 197/500:
+Training - Loss: 1149.8262, Recon: 1108.9943, KL: 40.8320
+Validation - Loss: 1081.5003, Recon: 1040.7348, KL: 40.7655
+
+Epoch 198/500:
+Training - Loss: 1143.3256, Recon: 1102.4484, KL: 40.8772
+Validation - Loss: 1079.5300, Recon: 1039.8720, KL: 39.6580
+
+Epoch 199/500:
+Training - Loss: 1138.5945, Recon: 1097.6447, KL: 40.9498
+Validation - Loss: 1066.7408, Recon: 1028.3118, KL: 38.4290
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142434.pt
+Epoch 200/500:
+Training - Loss: 1137.7284, Recon: 1096.6919, KL: 41.0365
+Validation - Loss: 1062.8902, Recon: 1024.2290, KL: 38.6612
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142435.pt
+Epoch 201/500:
+Training - Loss: 1131.5421, Recon: 1090.4444, KL: 41.0977
+Validation - Loss: 1059.0105, Recon: 1018.8975, KL: 40.1129
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142435.pt
+Epoch 202/500:
+Training - Loss: 1139.1756, Recon: 1098.0187, KL: 41.1569
+Validation - Loss: 1068.4638, Recon: 1028.7441, KL: 39.7197
+
+Epoch 203/500:
+Training - Loss: 1126.7116, Recon: 1085.5142, KL: 41.1974
+Validation - Loss: 1067.4463, Recon: 1027.5334, KL: 39.9130
+
+Epoch 204/500:
+Training - Loss: 1128.6389, Recon: 1087.3904, KL: 41.2485
+Validation - Loss: 1050.2284, Recon: 1011.4451, KL: 38.7833
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142437.pt
+Epoch 205/500:
+Training - Loss: 1126.8561, Recon: 1085.5205, KL: 41.3355
+Validation - Loss: 1050.2519, Recon: 1011.2370, KL: 39.0149
+
+Epoch 206/500:
+Training - Loss: 1117.8479, Recon: 1076.4310, KL: 41.4168
+Validation - Loss: 1047.1845, Recon: 1008.1488, KL: 39.0357
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142438.pt
+Epoch 207/500:
+Training - Loss: 1111.5751, Recon: 1070.0648, KL: 41.5103
+Validation - Loss: 1037.9542, Recon: 999.3699, KL: 38.5844
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142439.pt
+Epoch 208/500:
+Training - Loss: 1109.2101, Recon: 1067.6093, KL: 41.6008
+Validation - Loss: 1043.0235, Recon: 1003.5677, KL: 39.4558
+
+Epoch 209/500:
+Training - Loss: 1104.4906, Recon: 1062.7992, KL: 41.6915
+Validation - Loss: 1035.0712, Recon: 995.5322, KL: 39.5390
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142440.pt
+Epoch 210/500:
+Training - Loss: 1102.7194, Recon: 1060.9785, KL: 41.7409
+Validation - Loss: 1038.3071, Recon: 997.5971, KL: 40.7101
+
+Epoch 211/500:
+Training - Loss: 1100.6239, Recon: 1058.7992, KL: 41.8247
+Validation - Loss: 1034.0927, Recon: 993.9059, KL: 40.1868
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142441.pt
+Epoch 212/500:
+Training - Loss: 1099.4277, Recon: 1057.5268, KL: 41.9009
+Validation - Loss: 1031.4361, Recon: 991.0406, KL: 40.3955
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142442.pt
+Epoch 213/500:
+Training - Loss: 1098.8256, Recon: 1056.8789, KL: 41.9467
+Validation - Loss: 1027.7224, Recon: 988.1490, KL: 39.5734
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142442.pt
+Epoch 214/500:
+Training - Loss: 1096.8959, Recon: 1054.8581, KL: 42.0378
+Validation - Loss: 1034.8380, Recon: 994.8039, KL: 40.0341
+
+Epoch 215/500:
+Training - Loss: 1093.6023, Recon: 1051.4732, KL: 42.1291
+Validation - Loss: 1034.9450, Recon: 993.6276, KL: 41.3174
+
+Epoch 216/500:
+Training - Loss: 1090.4967, Recon: 1048.3369, KL: 42.1598
+Validation - Loss: 1017.9006, Recon: 977.9590, KL: 39.9416
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142444.pt
+Epoch 217/500:
+Training - Loss: 1090.0442, Recon: 1047.7955, KL: 42.2488
+Validation - Loss: 1013.9334, Recon: 974.3785, KL: 39.5550
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142445.pt
+Epoch 218/500:
+Training - Loss: 1077.7264, Recon: 1035.4073, KL: 42.3191
+Validation - Loss: 1013.9793, Recon: 974.4154, KL: 39.5639
+
+Epoch 219/500:
+Training - Loss: 1083.0082, Recon: 1040.6248, KL: 42.3834
+Validation - Loss: 1024.5889, Recon: 984.6240, KL: 39.9649
+
+Epoch 220/500:
+Training - Loss: 1079.2828, Recon: 1036.8433, KL: 42.4396
+Validation - Loss: 1015.2421, Recon: 973.6346, KL: 41.6075
+
+Epoch 221/500:
+Training - Loss: 1080.4746, Recon: 1037.9950, KL: 42.4797
+Validation - Loss: 1008.2582, Recon: 967.1343, KL: 41.1239
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142447.pt
+Epoch 222/500:
+Training - Loss: 1071.2301, Recon: 1028.7023, KL: 42.5279
+Validation - Loss: 1010.3902, Recon: 969.3034, KL: 41.0869
+
+Epoch 223/500:
+Training - Loss: 1064.4616, Recon: 1021.8552, KL: 42.6063
+Validation - Loss: 1004.3167, Recon: 964.0159, KL: 40.3008
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142448.pt
+Epoch 224/500:
+Training - Loss: 1065.1358, Recon: 1022.4835, KL: 42.6523
+Validation - Loss: 1011.5181, Recon: 970.5333, KL: 40.9849
+
+Epoch 225/500:
+Training - Loss: 1064.9292, Recon: 1022.2005, KL: 42.7287
+Validation - Loss: 1001.4762, Recon: 960.9016, KL: 40.5746
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142450.pt
+Epoch 226/500:
+Training - Loss: 1065.0564, Recon: 1022.2989, KL: 42.7575
+Validation - Loss: 1004.7944, Recon: 964.2428, KL: 40.5517
+
+Epoch 227/500:
+Training - Loss: 1059.8533, Recon: 1017.0373, KL: 42.8161
+Validation - Loss: 996.5953, Recon: 955.9841, KL: 40.6112
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142451.pt
+Epoch 228/500:
+Training - Loss: 1058.6678, Recon: 1015.7954, KL: 42.8723
+Validation - Loss: 988.2696, Recon: 948.0406, KL: 40.2290
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142452.pt
+Epoch 229/500:
+Training - Loss: 1055.7781, Recon: 1012.8329, KL: 42.9452
+Validation - Loss: 998.9089, Recon: 956.3677, KL: 42.5412
+
+Epoch 230/500:
+Training - Loss: 1060.2776, Recon: 1017.2763, KL: 43.0013
+Validation - Loss: 993.6949, Recon: 952.6597, KL: 41.0352
+
+Epoch 231/500:
+Training - Loss: 1052.0025, Recon: 1008.9047, KL: 43.0978
+Validation - Loss: 985.3072, Recon: 945.4193, KL: 39.8879
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142453.pt
+Epoch 232/500:
+Training - Loss: 1047.0044, Recon: 1003.8377, KL: 43.1668
+Validation - Loss: 983.8992, Recon: 942.8700, KL: 41.0292
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142454.pt
+Epoch 233/500:
+Training - Loss: 1046.1061, Recon: 1002.9084, KL: 43.1977
+Validation - Loss: 986.2051, Recon: 944.1758, KL: 42.0293
+
+Epoch 234/500:
+Training - Loss: 1045.6724, Recon: 1002.4261, KL: 43.2463
+Validation - Loss: 986.8669, Recon: 945.8345, KL: 41.0324
+
+Epoch 235/500:
+Training - Loss: 1044.9991, Recon: 1001.7007, KL: 43.2984
+Validation - Loss: 984.1544, Recon: 942.8570, KL: 41.2974
+
+Epoch 236/500:
+Training - Loss: 1041.3331, Recon: 997.9658, KL: 43.3674
+Validation - Loss: 977.3759, Recon: 935.2425, KL: 42.1335
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142456.pt
+Epoch 237/500:
+Training - Loss: 1035.6592, Recon: 992.2013, KL: 43.4579
+Validation - Loss: 973.6046, Recon: 932.9442, KL: 40.6604
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142457.pt
+Epoch 238/500:
+Training - Loss: 1032.2955, Recon: 988.7556, KL: 43.5399
+Validation - Loss: 975.1997, Recon: 933.1618, KL: 42.0379
+
+Epoch 239/500:
+Training - Loss: 1030.5785, Recon: 986.9793, KL: 43.5993
+Validation - Loss: 976.3004, Recon: 934.6305, KL: 41.6699
+
+Epoch 240/500:
+Training - Loss: 1027.0553, Recon: 983.3715, KL: 43.6837
+Validation - Loss: 963.7879, Recon: 923.0999, KL: 40.6881
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142459.pt
+Epoch 241/500:
+Training - Loss: 1023.3860, Recon: 979.6464, KL: 43.7396
+Validation - Loss: 964.1568, Recon: 921.1945, KL: 42.9623
+
+Epoch 242/500:
+Training - Loss: 1038.3005, Recon: 994.4727, KL: 43.8277
+Validation - Loss: 977.4479, Recon: 933.6351, KL: 43.8127
+
+Epoch 243/500:
+Training - Loss: 1027.0562, Recon: 983.1693, KL: 43.8869
+Validation - Loss: 967.1729, Recon: 925.0362, KL: 42.1367
+
+Epoch 244/500:
+Training - Loss: 1021.0516, Recon: 977.1378, KL: 43.9137
+Validation - Loss: 964.4645, Recon: 922.8223, KL: 41.6421
+
+Epoch 245/500:
+Training - Loss: 1024.0224, Recon: 980.0827, KL: 43.9397
+Validation - Loss: 958.5820, Recon: 916.5697, KL: 42.0123
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142502.pt
+Epoch 246/500:
+Training - Loss: 1021.6316, Recon: 977.6183, KL: 44.0133
+Validation - Loss: 956.4177, Recon: 914.1874, KL: 42.2303
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142502.pt
+Epoch 247/500:
+Training - Loss: 1017.7824, Recon: 973.7014, KL: 44.0810
+Validation - Loss: 961.1037, Recon: 918.9648, KL: 42.1389
+
+Epoch 248/500:
+Training - Loss: 1013.2760, Recon: 969.1430, KL: 44.1330
+Validation - Loss: 957.5788, Recon: 916.1035, KL: 41.4752
+
+Epoch 249/500:
+Training - Loss: 1018.3547, Recon: 974.1968, KL: 44.1579
+Validation - Loss: 954.4157, Recon: 912.2324, KL: 42.1833
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142504.pt
+Epoch 250/500:
+Training - Loss: 1010.5134, Recon: 966.3012, KL: 44.2122
+Validation - Loss: 956.2869, Recon: 914.1590, KL: 42.1279
+
+Epoch 251/500:
+Training - Loss: 1010.6569, Recon: 966.4217, KL: 44.2352
+Validation - Loss: 949.1132, Recon: 907.1418, KL: 41.9714
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142505.pt
+Epoch 252/500:
+Training - Loss: 1004.8850, Recon: 960.6109, KL: 44.2741
+Validation - Loss: 955.3262, Recon: 912.6182, KL: 42.7080
+
+Epoch 253/500:
+Training - Loss: 1006.2178, Recon: 961.8658, KL: 44.3521
+Validation - Loss: 950.8154, Recon: 908.7587, KL: 42.0566
+
+Epoch 254/500:
+Training - Loss: 1000.9315, Recon: 956.5258, KL: 44.4057
+Validation - Loss: 949.0242, Recon: 906.4428, KL: 42.5814
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142507.pt
+Epoch 255/500:
+Training - Loss: 1001.0603, Recon: 956.6225, KL: 44.4378
+Validation - Loss: 940.3285, Recon: 898.0677, KL: 42.2608
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142507.pt
+Epoch 256/500:
+Training - Loss: 1002.3644, Recon: 957.8680, KL: 44.4964
+Validation - Loss: 946.8345, Recon: 902.3794, KL: 44.4551
+
+Epoch 257/500:
+Training - Loss: 998.8611, Recon: 954.3365, KL: 44.5247
+Validation - Loss: 941.6030, Recon: 899.6841, KL: 41.9190
+
+Epoch 258/500:
+Training - Loss: 1000.7157, Recon: 956.1480, KL: 44.5677
+Validation - Loss: 941.5779, Recon: 899.0076, KL: 42.5703
+
+Epoch 259/500:
+Training - Loss: 994.3285, Recon: 949.6982, KL: 44.6303
+Validation - Loss: 940.1334, Recon: 898.1761, KL: 41.9572
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142510.pt
+Epoch 260/500:
+Training - Loss: 994.0269, Recon: 949.3402, KL: 44.6867
+Validation - Loss: 931.2848, Recon: 889.1143, KL: 42.1705
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142510.pt
+Epoch 261/500:
+Training - Loss: 988.1189, Recon: 943.3878, KL: 44.7310
+Validation - Loss: 932.2270, Recon: 889.4191, KL: 42.8080
+
+Epoch 262/500:
+Training - Loss: 991.7009, Recon: 946.9114, KL: 44.7894
+Validation - Loss: 931.6811, Recon: 888.3825, KL: 43.2986
+
+Epoch 263/500:
+Training - Loss: 990.7334, Recon: 945.8867, KL: 44.8467
+Validation - Loss: 936.3587, Recon: 892.9216, KL: 43.4370
+
+Epoch 264/500:
+Training - Loss: 984.8331, Recon: 939.9491, KL: 44.8840
+Validation - Loss: 927.6560, Recon: 884.9209, KL: 42.7351
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142513.pt
+Epoch 265/500:
+Training - Loss: 983.8692, Recon: 938.9620, KL: 44.9072
+Validation - Loss: 930.8939, Recon: 888.0055, KL: 42.8883
+
+Epoch 266/500:
+Training - Loss: 983.8414, Recon: 938.8901, KL: 44.9514
+Validation - Loss: 924.1422, Recon: 881.4633, KL: 42.6789
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142514.pt
+Epoch 267/500:
+Training - Loss: 980.2519, Recon: 935.2381, KL: 45.0138
+Validation - Loss: 924.5868, Recon: 881.8903, KL: 42.6965
+
+Epoch 268/500:
+Training - Loss: 977.0872, Recon: 932.0426, KL: 45.0445
+Validation - Loss: 925.1633, Recon: 882.5668, KL: 42.5965
+
+Epoch 269/500:
+Training - Loss: 979.6147, Recon: 934.5040, KL: 45.1106
+Validation - Loss: 923.4378, Recon: 880.3208, KL: 43.1170
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142516.pt
+Epoch 270/500:
+Training - Loss: 976.8367, Recon: 931.6940, KL: 45.1426
+Validation - Loss: 928.8201, Recon: 884.3315, KL: 44.4886
+
+Epoch 271/500:
+Training - Loss: 969.2726, Recon: 924.0920, KL: 45.1806
+Validation - Loss: 920.8438, Recon: 878.0343, KL: 42.8095
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142517.pt
+Epoch 272/500:
+Training - Loss: 976.5327, Recon: 931.3142, KL: 45.2185
+Validation - Loss: 921.8259, Recon: 878.1376, KL: 43.6883
+
+Epoch 273/500:
+Training - Loss: 968.6064, Recon: 923.3382, KL: 45.2681
+Validation - Loss: 919.8837, Recon: 876.3871, KL: 43.4966
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142518.pt
+Epoch 274/500:
+Training - Loss: 967.9643, Recon: 922.6606, KL: 45.3037
+Validation - Loss: 916.8812, Recon: 874.0799, KL: 42.8012
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142519.pt
+Epoch 275/500:
+Training - Loss: 969.8220, Recon: 924.4723, KL: 45.3497
+Validation - Loss: 917.0924, Recon: 873.8860, KL: 43.2064
+
+Epoch 276/500:
+Training - Loss: 969.5073, Recon: 924.1339, KL: 45.3735
+Validation - Loss: 912.7826, Recon: 869.9926, KL: 42.7900
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142520.pt
+Epoch 277/500:
+Training - Loss: 966.3556, Recon: 920.9314, KL: 45.4242
+Validation - Loss: 915.6914, Recon: 872.4353, KL: 43.2561
+
+Epoch 278/500:
+Training - Loss: 968.5176, Recon: 923.0736, KL: 45.4440
+Validation - Loss: 910.5746, Recon: 867.3243, KL: 43.2502
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142521.pt
+Epoch 279/500:
+Training - Loss: 959.9011, Recon: 914.3936, KL: 45.5075
+Validation - Loss: 925.4525, Recon: 879.8518, KL: 45.6007
+
+Epoch 280/500:
+Training - Loss: 962.8386, Recon: 917.3223, KL: 45.5162
+Validation - Loss: 911.9122, Recon: 867.6100, KL: 44.3022
+
+Epoch 281/500:
+Training - Loss: 960.2698, Recon: 914.7121, KL: 45.5577
+Validation - Loss: 911.8945, Recon: 867.8440, KL: 44.0504
+
+Epoch 282/500:
+Training - Loss: 955.2442, Recon: 909.6324, KL: 45.6118
+Validation - Loss: 905.1018, Recon: 861.6568, KL: 43.4450
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142523.pt
+Epoch 283/500:
+Training - Loss: 957.1706, Recon: 911.5172, KL: 45.6535
+Validation - Loss: 905.3975, Recon: 861.6760, KL: 43.7214
+
+Epoch 284/500:
+Training - Loss: 956.5807, Recon: 910.9133, KL: 45.6674
+Validation - Loss: 907.3936, Recon: 863.8397, KL: 43.5539
+
+Epoch 285/500:
+Training - Loss: 961.9407, Recon: 916.2546, KL: 45.6861
+Validation - Loss: 906.5700, Recon: 863.3062, KL: 43.2638
+
+Epoch 286/500:
+Training - Loss: 956.0916, Recon: 910.3624, KL: 45.7292
+Validation - Loss: 897.4027, Recon: 853.7766, KL: 43.6261
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142525.pt
+Epoch 287/500:
+Training - Loss: 952.8369, Recon: 907.0781, KL: 45.7587
+Validation - Loss: 905.6676, Recon: 862.2938, KL: 43.3738
+
+Epoch 288/500:
+Training - Loss: 952.8618, Recon: 907.0693, KL: 45.7925
+Validation - Loss: 898.8906, Recon: 855.2039, KL: 43.6867
+
+Epoch 289/500:
+Training - Loss: 949.5586, Recon: 903.7585, KL: 45.8001
+Validation - Loss: 904.1347, Recon: 858.9712, KL: 45.1635
+
+Epoch 290/500:
+Training - Loss: 949.2790, Recon: 903.4455, KL: 45.8335
+Validation - Loss: 895.9145, Recon: 851.5851, KL: 44.3294
+
+Saved best model to vae_checkpoints/vae_AUDIO_best_20241209_142528.pt
+Epoch 291/500:
+Training - Loss: 953.3226, Recon: 907.4542, KL: 45.8683
+Validation - Loss: 905.0158, Recon: 860.8929, KL: 44.1229
+
+Epoch 292/500:
+Training - Loss: 948.5792, Recon: 902.6682, KL: 45.9110
+Validation - Loss: 897.8952, Recon: 853.5503, KL: 44.3448
+
+Epoch 293/500:
+Training - Loss: 949.6765, Recon: 903.7086, KL: 45.9679
+Validation - Loss: 896.4628, Recon: 851.7559, KL: 44.7068
+
+Epoch 294/500:
+Training - Loss: 945.0089, Recon: 898.9991, KL: 46.0098
+Validation - Loss: 896.4654, Recon: 852.9938, KL: 43.4715
+
+Epoch 295/500:
+Training - Loss: 946.2311, Recon: 900.1837, KL: 46.0475
+Validation - Loss: 897.2806, Recon: 853.5314, KL: 43.7492
+
+Early stopping triggered

@@ -1,0 +1,265 @@
+Creating normal-only data loaders...
+Normal train loader created with 8320 samples
+Normal validation loader created with 1925 samples
+Normal test loader created with 1500 samples
+Epoch 1/500:
+Training - Loss: 28969.1135, Recon: 28878.6521, KL: 90.4615
+Validation - Loss: 26259.4518, Recon: 26180.5376, KL: 78.9143
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_142247.pt
+Epoch 2/500:
+Training - Loss: 25881.9744, Recon: 25831.8541, KL: 50.1203
+Validation - Loss: 22820.9165, Recon: 22776.4009, KL: 44.5155
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_142302.pt
+Epoch 3/500:
+Training - Loss: 23933.2578, Recon: 23882.7794, KL: 50.4784
+Validation - Loss: 21860.4813, Recon: 21800.1649, KL: 60.3163
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_142316.pt
+Epoch 4/500:
+Training - Loss: 22205.8898, Recon: 22152.7836, KL: 53.1062
+Validation - Loss: 24553.4546, Recon: 24368.2091, KL: 185.2455
+
+Epoch 5/500:
+Training - Loss: 20795.3275, Recon: 20744.0387, KL: 51.2888
+Validation - Loss: 19525.9108, Recon: 19478.8835, KL: 47.0274
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_142342.pt
+Epoch 6/500:
+Training - Loss: 19492.8994, Recon: 19442.1909, KL: 50.7085
+Validation - Loss: 17671.1597, Recon: 17617.0533, KL: 54.1064
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_142354.pt
+Epoch 7/500:
+Training - Loss: 18201.7243, Recon: 18150.1592, KL: 51.5650
+Validation - Loss: 16415.2603, Recon: 16370.6124, KL: 44.6479
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_142407.pt
+Epoch 8/500:
+Training - Loss: 17054.4150, Recon: 17002.7480, KL: 51.6671
+Validation - Loss: 16889.9617, Recon: 16820.2723, KL: 69.6894
+
+Epoch 9/500:
+Training - Loss: 16196.8710, Recon: 16144.2889, KL: 52.5820
+Validation - Loss: 14720.4506, Recon: 14657.0502, KL: 63.4004
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_142434.pt
+Epoch 10/500:
+Training - Loss: 15303.1367, Recon: 15249.7251, KL: 53.4116
+Validation - Loss: 14288.3528, Recon: 14210.0587, KL: 78.2942
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_142447.pt
+Epoch 11/500:
+Training - Loss: 14507.6025, Recon: 14453.3428, KL: 54.2597
+Validation - Loss: 13476.6473, Recon: 13412.4071, KL: 64.2402
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_142500.pt
+Epoch 12/500:
+Training - Loss: 13776.6433, Recon: 13721.9766, KL: 54.6668
+Validation - Loss: 13034.1625, Recon: 12962.6789, KL: 71.4835
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_142515.pt
+Epoch 13/500:
+Training - Loss: 13184.4628, Recon: 13128.8679, KL: 55.5949
+Validation - Loss: 12501.2505, Recon: 12442.8101, KL: 58.4404
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_142527.pt
+Epoch 14/500:
+Training - Loss: 12548.2402, Recon: 12493.2103, KL: 55.0299
+Validation - Loss: 11933.4794, Recon: 11865.5632, KL: 67.9161
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_142542.pt
+Epoch 15/500:
+Training - Loss: 12085.9405, Recon: 12031.3455, KL: 54.5950
+Validation - Loss: 11453.0709, Recon: 11391.1960, KL: 61.8750
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_142555.pt
+Epoch 16/500:
+Training - Loss: 11812.2122, Recon: 11757.8836, KL: 54.3285
+Validation - Loss: 10665.7204, Recon: 10605.8480, KL: 59.8723
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_142610.pt
+Epoch 17/500:
+Training - Loss: 11270.1433, Recon: 11215.2852, KL: 54.8582
+Validation - Loss: 10099.5779, Recon: 10044.7415, KL: 54.8365
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_142622.pt
+Epoch 18/500:
+Training - Loss: 10854.2539, Recon: 10798.4239, KL: 55.8301
+Validation - Loss: 10310.7014, Recon: 10243.0007, KL: 67.7007
+
+Epoch 19/500:
+Training - Loss: 10601.9475, Recon: 10544.9421, KL: 57.0055
+Validation - Loss: 9652.9315, Recon: 9594.5281, KL: 58.4034
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_142646.pt
+Epoch 20/500:
+Training - Loss: 10257.4867, Recon: 10200.7544, KL: 56.7323
+Validation - Loss: 9643.5712, Recon: 9571.5867, KL: 71.9845
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_142700.pt
+Epoch 21/500:
+Training - Loss: 9907.4108, Recon: 9849.8848, KL: 57.5260
+Validation - Loss: 9303.6872, Recon: 9237.1746, KL: 66.5126
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_142713.pt
+Epoch 22/500:
+Training - Loss: 9606.9433, Recon: 9548.8438, KL: 58.0995
+Validation - Loss: 10429.6166, Recon: 10320.5343, KL: 109.0823
+
+Epoch 23/500:
+Training - Loss: 9411.1522, Recon: 9352.2179, KL: 58.9343
+Validation - Loss: 8789.9457, Recon: 8731.3967, KL: 58.5490
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_142742.pt
+Epoch 24/500:
+Training - Loss: 9118.5008, Recon: 9058.3489, KL: 60.1519
+Validation - Loss: 8662.3396, Recon: 8600.9184, KL: 61.4212
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_142755.pt
+Epoch 25/500:
+Training - Loss: 8908.3554, Recon: 8848.0744, KL: 60.2809
+Validation - Loss: 8328.4694, Recon: 8271.8496, KL: 56.6198
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_142810.pt
+Epoch 26/500:
+Training - Loss: 8663.0205, Recon: 8602.1502, KL: 60.8703
+Validation - Loss: 8081.8030, Recon: 8022.2045, KL: 59.5985
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_142823.pt
+Epoch 27/500:
+Training - Loss: 8496.9665, Recon: 8435.6995, KL: 61.2670
+Validation - Loss: 8427.1018, Recon: 8349.9346, KL: 77.1672
+
+Epoch 28/500:
+Training - Loss: 8358.9140, Recon: 8297.2856, KL: 61.6285
+Validation - Loss: 7583.4461, Recon: 7523.8033, KL: 59.6428
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_142851.pt
+Epoch 29/500:
+Training - Loss: 8221.6426, Recon: 8159.6367, KL: 62.0059
+Validation - Loss: 7526.7271, Recon: 7467.1971, KL: 59.5301
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_142904.pt
+Epoch 30/500:
+Training - Loss: 8084.2881, Recon: 8021.6055, KL: 62.6827
+Validation - Loss: 7551.7814, Recon: 7485.9864, KL: 65.7950
+
+Epoch 31/500:
+Training - Loss: 7947.8496, Recon: 7884.6339, KL: 63.2158
+Validation - Loss: 7457.7965, Recon: 7391.0662, KL: 66.7303
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_142930.pt
+Epoch 32/500:
+Training - Loss: 7927.1686, Recon: 7863.3635, KL: 63.8051
+Validation - Loss: 7557.5683, Recon: 7491.4554, KL: 66.1129
+
+Epoch 33/500:
+Training - Loss: 7707.7201, Recon: 7643.2215, KL: 64.4986
+Validation - Loss: 7429.1504, Recon: 7356.7926, KL: 72.3578
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_143001.pt
+Epoch 34/500:
+Training - Loss: 7592.1566, Recon: 7527.1112, KL: 65.0454
+Validation - Loss: 7305.5337, Recon: 7236.7102, KL: 68.8235
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_143015.pt
+Epoch 35/500:
+Training - Loss: 7486.9171, Recon: 7421.3621, KL: 65.5550
+Validation - Loss: 7042.3958, Recon: 6974.1802, KL: 68.2155
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_143027.pt
+Epoch 36/500:
+Training - Loss: 7417.1679, Recon: 7351.1509, KL: 66.0170
+Validation - Loss: 7074.0059, Recon: 7005.7196, KL: 68.2863
+
+Epoch 37/500:
+Training - Loss: 7359.1462, Recon: 7292.6441, KL: 66.5022
+Validation - Loss: 7597.1876, Recon: 7493.3060, KL: 103.8816
+
+Epoch 38/500:
+Training - Loss: 7270.9252, Recon: 7203.9578, KL: 66.9674
+Validation - Loss: 6925.6145, Recon: 6854.3087, KL: 71.3058
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_143107.pt
+Epoch 39/500:
+Training - Loss: 7231.0592, Recon: 7163.6516, KL: 67.4077
+Validation - Loss: 7021.6535, Recon: 6947.8136, KL: 73.8400
+
+Epoch 40/500:
+Training - Loss: 7164.1408, Recon: 7096.2887, KL: 67.8521
+Validation - Loss: 6740.9948, Recon: 6673.5411, KL: 67.4538
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_143136.pt
+Epoch 41/500:
+Training - Loss: 7139.3946, Recon: 7071.1369, KL: 68.2577
+Validation - Loss: 7586.2212, Recon: 7480.7631, KL: 105.4580
+
+Epoch 42/500:
+Training - Loss: 7082.9478, Recon: 7014.2970, KL: 68.6508
+Validation - Loss: 6604.0373, Recon: 6536.6792, KL: 67.3580
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_143203.pt
+Epoch 43/500:
+Training - Loss: 7027.2773, Recon: 6958.0816, KL: 69.1958
+Validation - Loss: 7695.5807, Recon: 7585.6457, KL: 109.9350
+
+Epoch 44/500:
+Training - Loss: 6983.5029, Recon: 6913.7515, KL: 69.7514
+Validation - Loss: 6497.1868, Recon: 6428.9092, KL: 68.2776
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_143232.pt
+Epoch 45/500:
+Training - Loss: 6933.3044, Recon: 6863.1567, KL: 70.1476
+Validation - Loss: 6640.5079, Recon: 6564.5769, KL: 75.9310
+
+Epoch 46/500:
+Training - Loss: 6919.6302, Recon: 6849.1204, KL: 70.5098
+Validation - Loss: 6457.5366, Recon: 6386.7687, KL: 70.7679
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_143259.pt
+Epoch 47/500:
+Training - Loss: 6888.1583, Recon: 6817.3298, KL: 70.8285
+Validation - Loss: 6435.6896, Recon: 6366.8754, KL: 68.8142
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_143313.pt
+Epoch 48/500:
+Training - Loss: 6858.4421, Recon: 6787.2993, KL: 71.1428
+Validation - Loss: 6656.9651, Recon: 6584.1470, KL: 72.8181
+
+Epoch 49/500:
+Training - Loss: 6828.9351, Recon: 6757.5032, KL: 71.4319
+Validation - Loss: 6472.3694, Recon: 6400.4347, KL: 71.9346
+
+Epoch 50/500:
+Training - Loss: 6808.8489, Recon: 6737.0782, KL: 71.7707
+Validation - Loss: 6374.0254, Recon: 6306.3757, KL: 67.6497
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_143352.pt
+Epoch 51/500:
+Training - Loss: 6757.8394, Recon: 6685.7760, KL: 72.0633
+Validation - Loss: 6232.7706, Recon: 6164.1527, KL: 68.6179
+
+Saved best model to vae_checkpoints/vae_RGB_best_20241209_143407.pt
+Epoch 52/500:
+Training - Loss: 6701.6121, Recon: 6629.2769, KL: 72.3353
+Validation - Loss: 6482.7117, Recon: 6406.6476, KL: 76.0640
+
+Epoch 53/500:
+Training - Loss: 6691.2007, Recon: 6618.6408, KL: 72.5599
+Validation - Loss: 6240.2566, Recon: 6167.1557, KL: 73.1009
+
+Epoch 54/500:
+Training - Loss: 6673.6785, Recon: 6600.8670, KL: 72.8115
+Validation - Loss: 6448.8287, Recon: 6367.3627, KL: 81.4660
+
+Epoch 55/500:
+Training - Loss: 6657.5206, Recon: 6584.4915, KL: 73.0291
+Validation - Loss: 6297.7536, Recon: 6221.9737, KL: 75.7799
+
+Epoch 56/500:
+Training - Loss: 6634.3588, Recon: 6561.1141, KL: 73.2446
+Validation - Loss: 6236.2361, Recon: 6161.4724, KL: 74.7637
+
+Early stopping triggered
