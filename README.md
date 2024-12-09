@@ -20,3 +20,12 @@ Added validation splitting to the data. Can not create test/train/val splits for
 flow not yet supported, but see my notes in the code about how to implement it. it would be kinda simple
 
 Run the labeled chunks to generate data splits. This involved making changes to the Args, Dataset classes as well as rewriting some of those functions that were called like "Make List" or "Update File List Paths". Those chunks are now gone and replaced. Proceed with caution. if code you wrote in the past depended on these, there's a chance they may no longer work, but you can check what i wrote in my val splitter functions to try and resolve things. everything should still be there in a somewhat similar form.
+
+
+
+******************************
+LINKS TO FULLY TRAINED VAE
+
+look for best_trained_vae.pkl or the latest .pt file
+
+https://drive.google.com/file/d/17gNDWn7ma2n0ZQ915PtpyDsdRR9fbei4/view?usp=sharing
