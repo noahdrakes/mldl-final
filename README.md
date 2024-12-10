@@ -43,3 +43,8 @@ Additionally, i trained the VAE on the cluster on single modalities (audio, rgb)
 Here is a google drive dir that contains the training scripts and the best trained single modality vae models: 
 https://drive.google.com/drive/folders/1F3M0bkdY41iF9MiXBvj_TFXI_x-HbQDA?usp=sharing
 
+*******************************
+
+in the folder multimodal_hlnet_vae i include the files that i use to train the multimodal hlnet with the pretrained VAE. 
+
+genlists.py is an update to the list generation in the val splitting. it now correctly accesses file patterns.
