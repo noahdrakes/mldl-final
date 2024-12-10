@@ -1,0 +1,971 @@
+Creating data loaders...
+Train loader created with 15815 samples
+Validation loader created with 3955 samples
+Test loader created with 4000 samples
+
+Epoch 1/200
+Step 100: Training Loss: 1.2724
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 1/200:
+Train Loss: 1.7610
+Validation Loss: 1.6689
+PR-AUC (Offline/Online): 0.8319/0.8829
+Best PR-AUC: 0.8319 (Epoch 1)
+Epoch time: 28.41s
+
+Epoch 2/200
+Step 100: Training Loss: 1.0857
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 2/200:
+Train Loss: 1.0959
+Validation Loss: 1.3367
+PR-AUC (Offline/Online): 0.9001/0.9479
+Best PR-AUC: 0.9001 (Epoch 2)
+Epoch time: 32.90s
+
+Epoch 3/200
+Step 100: Training Loss: 0.9444
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 3/200:
+Train Loss: 0.9657
+Validation Loss: 1.1559
+PR-AUC (Offline/Online): 0.9235/0.9570
+Best PR-AUC: 0.9235 (Epoch 3)
+Epoch time: 32.51s
+
+Epoch 4/200
+Step 100: Training Loss: 0.8069
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 4/200:
+Train Loss: 0.8823
+Validation Loss: 1.1188
+PR-AUC (Offline/Online): 0.9208/0.9528
+Best PR-AUC: 0.9235 (Epoch 3)
+Epoch time: 33.66s
+
+Epoch 5/200
+Step 100: Training Loss: 0.8117
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 5/200:
+Train Loss: 0.8246
+Validation Loss: 0.9098
+PR-AUC (Offline/Online): 0.9550/0.9632
+Best PR-AUC: 0.9550 (Epoch 5)
+Epoch time: 32.94s
+
+Epoch 6/200
+Step 100: Training Loss: 0.9166
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 6/200:
+Train Loss: 0.7961
+Validation Loss: 0.9362
+PR-AUC (Offline/Online): 0.9389/0.9566
+Best PR-AUC: 0.9550 (Epoch 5)
+Epoch time: 32.58s
+EarlyStopping counter: 1 out of 7
+
+Epoch 7/200
+Step 100: Training Loss: 0.7166
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 7/200:
+Train Loss: 0.7752
+Validation Loss: 0.8466
+PR-AUC (Offline/Online): 0.9628/0.9697
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 30.49s
+
+Epoch 8/200
+Step 100: Training Loss: 0.7727
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 8/200:
+Train Loss: 0.7512
+Validation Loss: 0.8375
+PR-AUC (Offline/Online): 0.9607/0.9703
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 34.11s
+
+Epoch 9/200
+Step 100: Training Loss: 0.7491
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 9/200:
+Train Loss: 0.7385
+Validation Loss: 0.8075
+PR-AUC (Offline/Online): 0.9566/0.9680
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 33.75s
+
+Epoch 10/200
+Step 100: Training Loss: 0.6916
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 10/200:
+Train Loss: 0.7194
+Validation Loss: 0.7890
+PR-AUC (Offline/Online): 0.9461/0.9654
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 32.89s
+
+Epoch 11/200
+Step 100: Training Loss: 0.7161
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 11/200:
+Train Loss: 0.6882
+Validation Loss: 0.7789
+PR-AUC (Offline/Online): 0.9547/0.9688
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 32.35s
+
+Epoch 12/200
+Step 100: Training Loss: 0.8585
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 12/200:
+Train Loss: 0.6940
+Validation Loss: 0.7795
+PR-AUC (Offline/Online): 0.9494/0.9669
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 32.32s
+EarlyStopping counter: 1 out of 7
+
+Epoch 13/200
+Step 100: Training Loss: 0.6695
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 13/200:
+Train Loss: 0.6866
+Validation Loss: 0.7744
+PR-AUC (Offline/Online): 0.9570/0.9697
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 34.51s
+
+Epoch 14/200
+Step 100: Training Loss: 0.7199
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 14/200:
+Train Loss: 0.6866
+Validation Loss: 0.7611
+PR-AUC (Offline/Online): 0.9558/0.9695
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 32.08s
+
+Epoch 15/200
+Step 100: Training Loss: 0.6511
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 15/200:
+Train Loss: 0.6834
+Validation Loss: 0.7708
+PR-AUC (Offline/Online): 0.9541/0.9688
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 31.53s
+EarlyStopping counter: 1 out of 7
+
+Epoch 16/200
+Step 100: Training Loss: 0.6653
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 16/200:
+Train Loss: 0.6768
+Validation Loss: 0.7740
+PR-AUC (Offline/Online): 0.9569/0.9698
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 31.61s
+EarlyStopping counter: 2 out of 7
+
+Epoch 17/200
+Step 100: Training Loss: 0.6407
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 17/200:
+Train Loss: 0.6800
+Validation Loss: 0.7645
+PR-AUC (Offline/Online): 0.9563/0.9696
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 31.25s
+EarlyStopping counter: 3 out of 7
+
+Epoch 18/200
+Step 100: Training Loss: 0.6687
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 18/200:
+Train Loss: 0.6797
+Validation Loss: 0.7696
+PR-AUC (Offline/Online): 0.9559/0.9701
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 32.23s
+EarlyStopping counter: 4 out of 7
+
+Epoch 19/200
+Step 100: Training Loss: 0.7326
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 19/200:
+Train Loss: 0.6747
+Validation Loss: 0.7620
+PR-AUC (Offline/Online): 0.9533/0.9685
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 31.45s
+EarlyStopping counter: 5 out of 7
+
+Epoch 20/200
+Step 100: Training Loss: 0.7033
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 20/200:
+Train Loss: 0.6705
+Validation Loss: 0.7537
+PR-AUC (Offline/Online): 0.9543/0.9692
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 30.85s
+
+Epoch 21/200
+Step 100: Training Loss: 0.6632
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 21/200:
+Train Loss: 0.6725
+Validation Loss: 0.7619
+PR-AUC (Offline/Online): 0.9547/0.9694
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 32.90s
+EarlyStopping counter: 1 out of 7
+
+Epoch 22/200
+Step 100: Training Loss: 0.5335
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 22/200:
+Train Loss: 0.6705
+Validation Loss: 0.7551
+PR-AUC (Offline/Online): 0.9564/0.9699
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 32.43s
+EarlyStopping counter: 2 out of 7
+
+Epoch 23/200
+Step 100: Training Loss: 0.7172
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 23/200:
+Train Loss: 0.6747
+Validation Loss: 0.7517
+PR-AUC (Offline/Online): 0.9517/0.9684
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 31.30s
+
+Epoch 24/200
+Step 100: Training Loss: 0.6171
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 24/200:
+Train Loss: 0.6660
+Validation Loss: 0.7562
+PR-AUC (Offline/Online): 0.9545/0.9700
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 33.24s
+EarlyStopping counter: 1 out of 7
+
+Epoch 25/200
+Step 100: Training Loss: 0.7396
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 25/200:
+Train Loss: 0.6717
+Validation Loss: 0.7528
+PR-AUC (Offline/Online): 0.9537/0.9697
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 31.69s
+EarlyStopping counter: 2 out of 7
+
+Epoch 26/200
+Step 100: Training Loss: 0.6206
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 26/200:
+Train Loss: 0.6602
+Validation Loss: 0.7458
+PR-AUC (Offline/Online): 0.9526/0.9689
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 31.79s
+
+Epoch 27/200
+Step 100: Training Loss: 0.6837
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 27/200:
+Train Loss: 0.6598
+Validation Loss: 0.7538
+PR-AUC (Offline/Online): 0.9510/0.9681
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 31.17s
+EarlyStopping counter: 1 out of 7
+
+Epoch 28/200
+Step 100: Training Loss: 0.7030
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 28/200:
+Train Loss: 0.6638
+Validation Loss: 0.7430
+PR-AUC (Offline/Online): 0.9518/0.9689
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 31.29s
+
+Epoch 29/200
+Step 100: Training Loss: 0.6738
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 29/200:
+Train Loss: 0.6553
+Validation Loss: 0.7513
+PR-AUC (Offline/Online): 0.9529/0.9692
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 32.13s
+EarlyStopping counter: 1 out of 7
+
+Epoch 30/200
+Step 100: Training Loss: 0.6096
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 30/200:
+Train Loss: 0.6572
+Validation Loss: 0.7438
+PR-AUC (Offline/Online): 0.9513/0.9684
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 32.07s
+EarlyStopping counter: 2 out of 7
+
+Epoch 31/200
+Step 100: Training Loss: 0.7885
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 31/200:
+Train Loss: 0.6596
+Validation Loss: 0.7481
+PR-AUC (Offline/Online): 0.9531/0.9693
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 31.61s
+EarlyStopping counter: 3 out of 7
+
+Epoch 32/200
+Step 100: Training Loss: 0.5677
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 32/200:
+Train Loss: 0.6532
+Validation Loss: 0.7396
+PR-AUC (Offline/Online): 0.9523/0.9685
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 31.78s
+
+Epoch 33/200
+Step 100: Training Loss: 0.5954
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 33/200:
+Train Loss: 0.6562
+Validation Loss: 0.7322
+PR-AUC (Offline/Online): 0.9482/0.9677
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 30.77s
+
+Epoch 34/200
+Step 100: Training Loss: 0.6295
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 34/200:
+Train Loss: 0.6538
+Validation Loss: 0.7364
+PR-AUC (Offline/Online): 0.9495/0.9675
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 32.72s
+EarlyStopping counter: 1 out of 7
+
+Epoch 35/200
+Step 100: Training Loss: 0.7146
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 35/200:
+Train Loss: 0.6481
+Validation Loss: 0.7309
+PR-AUC (Offline/Online): 0.9501/0.9679
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 31.12s
+
+Epoch 36/200
+Step 100: Training Loss: 0.5833
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 36/200:
+Train Loss: 0.6437
+Validation Loss: 0.7411
+PR-AUC (Offline/Online): 0.9507/0.9684
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 30.50s
+EarlyStopping counter: 1 out of 7
+
+Epoch 37/200
+Step 100: Training Loss: 0.5396
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 37/200:
+Train Loss: 0.6469
+Validation Loss: 0.7361
+PR-AUC (Offline/Online): 0.9491/0.9681
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 31.85s
+EarlyStopping counter: 2 out of 7
+
+Epoch 38/200
+Step 100: Training Loss: 0.6006
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 38/200:
+Train Loss: 0.6452
+Validation Loss: 0.7329
+PR-AUC (Offline/Online): 0.9504/0.9684
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 32.66s
+EarlyStopping counter: 3 out of 7
+
+Epoch 39/200
+Step 100: Training Loss: 0.7553
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 39/200:
+Train Loss: 0.6448
+Validation Loss: 0.7217
+PR-AUC (Offline/Online): 0.9489/0.9676
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 32.88s
+
+Epoch 40/200
+Step 100: Training Loss: 0.5865
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 40/200:
+Train Loss: 0.6403
+Validation Loss: 0.7283
+PR-AUC (Offline/Online): 0.9471/0.9669
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 31.33s
+EarlyStopping counter: 1 out of 7
+
+Epoch 41/200
+Step 100: Training Loss: 0.6396
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 41/200:
+Train Loss: 0.6412
+Validation Loss: 0.7205
+PR-AUC (Offline/Online): 0.9482/0.9679
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 32.92s
+
+Epoch 42/200
+Step 100: Training Loss: 0.6864
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 42/200:
+Train Loss: 0.6378
+Validation Loss: 0.7238
+PR-AUC (Offline/Online): 0.9479/0.9677
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 32.90s
+EarlyStopping counter: 1 out of 7
+
+Epoch 43/200
+Step 100: Training Loss: 0.6162
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 43/200:
+Train Loss: 0.6354
+Validation Loss: 0.7263
+PR-AUC (Offline/Online): 0.9470/0.9668
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 32.37s
+EarlyStopping counter: 2 out of 7
+
+Epoch 44/200
+Step 100: Training Loss: 0.5731
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 44/200:
+Train Loss: 0.6366
+Validation Loss: 0.7188
+PR-AUC (Offline/Online): 0.9458/0.9661
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 31.38s
+
+Epoch 45/200
+Step 100: Training Loss: 0.6115
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 45/200:
+Train Loss: 0.6340
+Validation Loss: 0.7140
+PR-AUC (Offline/Online): 0.9446/0.9659
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 32.77s
+
+Epoch 46/200
+Step 100: Training Loss: 0.5701
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 46/200:
+Train Loss: 0.6325
+Validation Loss: 0.7183
+PR-AUC (Offline/Online): 0.9482/0.9668
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 33.01s
+EarlyStopping counter: 1 out of 7
+
+Epoch 47/200
+Step 100: Training Loss: 0.6792
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 47/200:
+Train Loss: 0.6351
+Validation Loss: 0.7209
+PR-AUC (Offline/Online): 0.9473/0.9670
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 30.98s
+EarlyStopping counter: 2 out of 7
+
+Epoch 48/200
+Step 100: Training Loss: 0.6756
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 48/200:
+Train Loss: 0.6334
+Validation Loss: 0.7239
+PR-AUC (Offline/Online): 0.9460/0.9670
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 30.60s
+EarlyStopping counter: 3 out of 7
+
+Epoch 49/200
+Step 100: Training Loss: 0.6023
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 49/200:
+Train Loss: 0.6249
+Validation Loss: 0.7067
+PR-AUC (Offline/Online): 0.9438/0.9657
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 33.11s
+
+Epoch 50/200
+Step 100: Training Loss: 0.6048
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 50/200:
+Train Loss: 0.6239
+Validation Loss: 0.7121
+PR-AUC (Offline/Online): 0.9443/0.9657
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 34.04s
+EarlyStopping counter: 1 out of 7
+
+Epoch 51/200
+Step 100: Training Loss: 0.5733
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 51/200:
+Train Loss: 0.6224
+Validation Loss: 0.7194
+PR-AUC (Offline/Online): 0.9460/0.9661
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 31.45s
+EarlyStopping counter: 2 out of 7
+
+Epoch 52/200
+Step 100: Training Loss: 0.6869
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 52/200:
+Train Loss: 0.6224
+Validation Loss: 0.7055
+PR-AUC (Offline/Online): 0.9445/0.9657
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 30.65s
+
+Epoch 53/200
+Step 100: Training Loss: 0.5908
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 53/200:
+Train Loss: 0.6240
+Validation Loss: 0.7194
+PR-AUC (Offline/Online): 0.9425/0.9653
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 34.16s
+EarlyStopping counter: 1 out of 7
+
+Epoch 54/200
+Step 100: Training Loss: 0.6149
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 54/200:
+Train Loss: 0.6197
+Validation Loss: 0.7103
+PR-AUC (Offline/Online): 0.9455/0.9661
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 30.75s
+EarlyStopping counter: 2 out of 7
+
+Epoch 55/200
+Step 100: Training Loss: 0.6369
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 55/200:
+Train Loss: 0.6167
+Validation Loss: 0.6977
+PR-AUC (Offline/Online): 0.9420/0.9645
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 30.58s
+
+Epoch 56/200
+Step 100: Training Loss: 0.6400
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 56/200:
+Train Loss: 0.6170
+Validation Loss: 0.7126
+PR-AUC (Offline/Online): 0.9438/0.9654
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 33.12s
+EarlyStopping counter: 1 out of 7
+
+Epoch 57/200
+Step 100: Training Loss: 0.7043
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 57/200:
+Train Loss: 0.6140
+Validation Loss: 0.6995
+PR-AUC (Offline/Online): 0.9390/0.9631
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 30.40s
+EarlyStopping counter: 2 out of 7
+
+Epoch 58/200
+Step 100: Training Loss: 0.7237
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 58/200:
+Train Loss: 0.6152
+Validation Loss: 0.7068
+PR-AUC (Offline/Online): 0.9409/0.9635
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 30.79s
+EarlyStopping counter: 3 out of 7
+
+Epoch 59/200
+Step 100: Training Loss: 0.6671
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 59/200:
+Train Loss: 0.6119
+Validation Loss: 0.7076
+PR-AUC (Offline/Online): 0.9445/0.9656
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 33.01s
+EarlyStopping counter: 4 out of 7
+
+Epoch 60/200
+Step 100: Training Loss: 0.6519
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 60/200:
+Train Loss: 0.6133
+Validation Loss: 0.7108
+PR-AUC (Offline/Online): 0.9427/0.9640
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 33.63s
+EarlyStopping counter: 5 out of 7
+
+Epoch 61/200
+Step 100: Training Loss: 0.6263
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 61/200:
+Train Loss: 0.6113
+Validation Loss: 0.7025
+PR-AUC (Offline/Online): 0.9410/0.9642
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 30.92s
+EarlyStopping counter: 6 out of 7
+
+Epoch 62/200
+Step 100: Training Loss: 0.6076
+Starting test...
+Input shape: torch.Size([5, 200, 1024])
+Label shape: torch.Size([5])
+Logits shape: torch.Size([5, 200, 1])
+Sig shape before mean: torch.Size([5, 200])
+Final shapes - GT: (800,), Pred: (800,), Pred2: (800,)
+Epoch 62/200:
+Train Loss: 0.6041
+Validation Loss: 0.6996
+PR-AUC (Offline/Online): 0.9386/0.9621
+Best PR-AUC: 0.9628 (Epoch 7)
+Epoch time: 31.25s
+EarlyStopping counter: 7 out of 7
+Early stopping triggered

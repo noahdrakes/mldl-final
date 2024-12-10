@@ -1,0 +1,309 @@
+Creating data loaders...
+Train loader created with 15815 samples
+Validation loader created with 3955 samples
+Test loader created with 4000 samples
+
+Epoch 1/200
+Step 100: Training Loss: 1.1408
+Epoch 1/200:
+Train Loss: 1.2744
+Validation Loss: 1.2531
+PR-AUC (Offline/Online): 0.9515/0.8610
+Best PR-AUC: 0.9515 (Epoch 1)
+Epoch time: 37.54s
+
+Epoch 2/200
+Step 100: Training Loss: 0.8984
+Epoch 2/200:
+Train Loss: 0.9860
+Validation Loss: 1.1126
+PR-AUC (Offline/Online): 0.9415/0.9823
+Best PR-AUC: 0.9515 (Epoch 1)
+Epoch time: 37.74s
+
+Epoch 3/200
+Step 100: Training Loss: 0.7529
+Epoch 3/200:
+Train Loss: 0.8289
+Validation Loss: 0.8913
+PR-AUC (Offline/Online): 0.9616/0.9834
+Best PR-AUC: 0.9616 (Epoch 3)
+Epoch time: 40.84s
+
+Epoch 4/200
+Step 100: Training Loss: 0.6914
+Epoch 4/200:
+Train Loss: 0.6885
+Validation Loss: 0.8771
+PR-AUC (Offline/Online): 0.9505/0.9804
+Best PR-AUC: 0.9616 (Epoch 3)
+Epoch time: 40.67s
+
+Epoch 5/200
+Step 100: Training Loss: 0.5339
+Epoch 5/200:
+Train Loss: 0.6187
+Validation Loss: 0.7460
+PR-AUC (Offline/Online): 0.9620/0.9840
+Best PR-AUC: 0.9620 (Epoch 5)
+Epoch time: 40.81s
+
+Epoch 6/200
+Step 100: Training Loss: 0.6462
+Epoch 6/200:
+Train Loss: 0.5891
+Validation Loss: 0.6693
+PR-AUC (Offline/Online): 0.9710/0.9850
+Best PR-AUC: 0.9710 (Epoch 6)
+Epoch time: 37.55s
+
+Epoch 7/200
+Step 100: Training Loss: 0.6886
+Epoch 7/200:
+Train Loss: 0.5540
+Validation Loss: 0.6329
+PR-AUC (Offline/Online): 0.9732/0.9850
+Best PR-AUC: 0.9732 (Epoch 7)
+Epoch time: 44.05s
+
+Epoch 8/200
+Step 100: Training Loss: 0.6406
+Epoch 8/200:
+Train Loss: 0.5388
+Validation Loss: 0.6192
+PR-AUC (Offline/Online): 0.9774/0.9857
+Best PR-AUC: 0.9774 (Epoch 8)
+Epoch time: 37.59s
+
+Epoch 9/200
+Step 100: Training Loss: 0.4409
+Epoch 9/200:
+Train Loss: 0.5299
+Validation Loss: 0.6034
+PR-AUC (Offline/Online): 0.9762/0.9851
+Best PR-AUC: 0.9774 (Epoch 8)
+Epoch time: 39.90s
+
+Epoch 10/200
+Step 100: Training Loss: 0.4753
+Epoch 10/200:
+Train Loss: 0.5172
+Validation Loss: 0.5748
+PR-AUC (Offline/Online): 0.9734/0.9854
+Best PR-AUC: 0.9774 (Epoch 8)
+Epoch time: 43.29s
+
+Epoch 11/200
+Step 100: Training Loss: 0.4579
+Epoch 11/200:
+Train Loss: 0.4948
+Validation Loss: 0.5828
+PR-AUC (Offline/Online): 0.9792/0.9865
+Best PR-AUC: 0.9792 (Epoch 11)
+Epoch time: 44.51s
+EarlyStopping counter: 1 out of 7
+
+Epoch 12/200
+Step 100: Training Loss: 0.4473
+Epoch 12/200:
+Train Loss: 0.4933
+Validation Loss: 0.5797
+PR-AUC (Offline/Online): 0.9806/0.9867
+Best PR-AUC: 0.9806 (Epoch 12)
+Epoch time: 43.26s
+EarlyStopping counter: 2 out of 7
+
+Epoch 13/200
+Step 100: Training Loss: 0.4798
+Epoch 13/200:
+Train Loss: 0.4848
+Validation Loss: 0.5752
+PR-AUC (Offline/Online): 0.9796/0.9859
+Best PR-AUC: 0.9806 (Epoch 12)
+Epoch time: 42.55s
+EarlyStopping counter: 3 out of 7
+
+Epoch 14/200
+Step 100: Training Loss: 0.5010
+Epoch 14/200:
+Train Loss: 0.4858
+Validation Loss: 0.5704
+PR-AUC (Offline/Online): 0.9767/0.9848
+Best PR-AUC: 0.9806 (Epoch 12)
+Epoch time: 42.10s
+
+Epoch 15/200
+Step 100: Training Loss: 0.4612
+Epoch 15/200:
+Train Loss: 0.4829
+Validation Loss: 0.5743
+PR-AUC (Offline/Online): 0.9806/0.9864
+Best PR-AUC: 0.9806 (Epoch 12)
+Epoch time: 42.19s
+EarlyStopping counter: 1 out of 7
+
+Epoch 16/200
+Step 100: Training Loss: 0.4261
+Epoch 16/200:
+Train Loss: 0.4799
+Validation Loss: 0.5660
+PR-AUC (Offline/Online): 0.9798/0.9860
+Best PR-AUC: 0.9806 (Epoch 12)
+Epoch time: 41.36s
+
+Epoch 17/200
+Step 100: Training Loss: 0.4704
+Epoch 17/200:
+Train Loss: 0.4810
+Validation Loss: 0.5632
+PR-AUC (Offline/Online): 0.9783/0.9857
+Best PR-AUC: 0.9806 (Epoch 12)
+Epoch time: 42.43s
+
+Epoch 18/200
+Step 100: Training Loss: 0.4271
+Epoch 18/200:
+Train Loss: 0.4758
+Validation Loss: 0.5690
+PR-AUC (Offline/Online): 0.9792/0.9857
+Best PR-AUC: 0.9806 (Epoch 12)
+Epoch time: 42.51s
+EarlyStopping counter: 1 out of 7
+
+Epoch 19/200
+Step 100: Training Loss: 0.5174
+Epoch 19/200:
+Train Loss: 0.4791
+Validation Loss: 0.5729
+PR-AUC (Offline/Online): 0.9818/0.9867
+Best PR-AUC: 0.9818 (Epoch 19)
+Epoch time: 41.87s
+EarlyStopping counter: 2 out of 7
+
+Epoch 20/200
+Step 100: Training Loss: 0.4931
+Epoch 20/200:
+Train Loss: 0.4767
+Validation Loss: 0.5670
+PR-AUC (Offline/Online): 0.9802/0.9859
+Best PR-AUC: 0.9818 (Epoch 19)
+Epoch time: 42.13s
+EarlyStopping counter: 3 out of 7
+
+Epoch 21/200
+Step 100: Training Loss: 0.5416
+Epoch 21/200:
+Train Loss: 0.4680
+Validation Loss: 0.5684
+PR-AUC (Offline/Online): 0.9815/0.9861
+Best PR-AUC: 0.9818 (Epoch 19)
+Epoch time: 42.23s
+EarlyStopping counter: 4 out of 7
+
+Epoch 22/200
+Step 100: Training Loss: 0.4880
+Epoch 22/200:
+Train Loss: 0.4697
+Validation Loss: 0.5680
+PR-AUC (Offline/Online): 0.9812/0.9861
+Best PR-AUC: 0.9818 (Epoch 19)
+Epoch time: 40.97s
+EarlyStopping counter: 5 out of 7
+
+Epoch 23/200
+Step 100: Training Loss: 0.4946
+Epoch 23/200:
+Train Loss: 0.4654
+Validation Loss: 0.5612
+PR-AUC (Offline/Online): 0.9804/0.9860
+Best PR-AUC: 0.9818 (Epoch 19)
+Epoch time: 40.61s
+
+Epoch 24/200
+Step 100: Training Loss: 0.4073
+Epoch 24/200:
+Train Loss: 0.4611
+Validation Loss: 0.5573
+PR-AUC (Offline/Online): 0.9809/0.9857
+Best PR-AUC: 0.9818 (Epoch 19)
+Epoch time: 40.55s
+
+Epoch 25/200
+Step 100: Training Loss: 0.4462
+Epoch 25/200:
+Train Loss: 0.4613
+Validation Loss: 0.5492
+PR-AUC (Offline/Online): 0.9809/0.9857
+Best PR-AUC: 0.9818 (Epoch 19)
+Epoch time: 41.25s
+
+Epoch 26/200
+Step 100: Training Loss: 0.5984
+Epoch 26/200:
+Train Loss: 0.4612
+Validation Loss: 0.5621
+PR-AUC (Offline/Online): 0.9808/0.9857
+Best PR-AUC: 0.9818 (Epoch 19)
+Epoch time: 41.35s
+EarlyStopping counter: 1 out of 7
+
+Epoch 27/200
+Step 100: Training Loss: 0.4215
+Epoch 27/200:
+Train Loss: 0.4578
+Validation Loss: 0.5543
+PR-AUC (Offline/Online): 0.9805/0.9857
+Best PR-AUC: 0.9818 (Epoch 19)
+Epoch time: 41.55s
+EarlyStopping counter: 2 out of 7
+
+Epoch 28/200
+Step 100: Training Loss: 0.4565
+Epoch 28/200:
+Train Loss: 0.4551
+Validation Loss: 0.5585
+PR-AUC (Offline/Online): 0.9815/0.9858
+Best PR-AUC: 0.9818 (Epoch 19)
+Epoch time: 39.81s
+EarlyStopping counter: 3 out of 7
+
+Epoch 29/200
+Step 100: Training Loss: 0.4139
+Epoch 29/200:
+Train Loss: 0.4611
+Validation Loss: 0.5531
+PR-AUC (Offline/Online): 0.9807/0.9859
+Best PR-AUC: 0.9818 (Epoch 19)
+Epoch time: 39.32s
+EarlyStopping counter: 4 out of 7
+
+Epoch 30/200
+Step 100: Training Loss: 0.4240
+Epoch 30/200:
+Train Loss: 0.4537
+Validation Loss: 0.5517
+PR-AUC (Offline/Online): 0.9801/0.9856
+Best PR-AUC: 0.9818 (Epoch 19)
+Epoch time: 39.83s
+EarlyStopping counter: 5 out of 7
+
+Epoch 31/200
+Step 100: Training Loss: 0.5277
+Epoch 31/200:
+Train Loss: 0.4521
+Validation Loss: 0.5527
+PR-AUC (Offline/Online): 0.9806/0.9857
+Best PR-AUC: 0.9818 (Epoch 19)
+Epoch time: 39.30s
+EarlyStopping counter: 6 out of 7
+
+Epoch 32/200
+Step 100: Training Loss: 0.3579
+Epoch 32/200:
+Train Loss: 0.4511
+Validation Loss: 0.5536
+PR-AUC (Offline/Online): 0.9817/0.9863
+Best PR-AUC: 0.9818 (Epoch 19)
+Epoch time: 39.57s
+EarlyStopping counter: 7 out of 7
+Early stopping triggered
