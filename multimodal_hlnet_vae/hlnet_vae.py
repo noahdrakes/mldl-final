@@ -19,6 +19,41 @@ import argparse
 import matplotlib.pyplot as plt
 from torch.utils.data import DataLoader
 
+class EarlyStopping:
+    """Early stopping to prevent overfitting"""
+    def __init__(self, patience=7, min_delta=0, verbose=False):
+        """
+        Args:
+            patience (int): Number of epochs to wait before stopping if no improvement
+            min_delta (float): Minimum change in monitored value to qualify as an improvement
+            verbose (bool): If True, prints out early stopping information
+        """
+        self.patience = patience
+        self.min_delta = min_delta
+        self.verbose = verbose
+        self.counter = 0
+        self.best_loss = None
+        self.early_stop = False
+        self.best_state_dict = None
+
+    def __call__(self, val_loss, model):
+        if self.best_loss is None:
+            self.best_loss = val_loss
+            self.best_state_dict = model.state_dict()
+        elif val_loss > self.best_loss - self.min_delta:
+            self.counter += 1
+            if self.verbose:
+                print(f'EarlyStopping counter: {self.counter} out of {self.patience}')
+            if self.counter >= self.patience:
+                self.early_stop = True
+        else:
+            self.best_loss = val_loss
+            self.best_state_dict = model.state_dict()
+            self.counter = 0
+
+    def get_best_model_state(self):
+        return self.best_state_dict
+
 class Args:
     def __init__(self):
         self.modality = 'MIX2'
@@ -274,9 +309,6 @@ def test_hl_vae(dataloader, model, device):
     video_pred = np.array(video_pred)
     video_pred2 = np.array(video_pred2)
 
-    # Print shapes for debugging
-    print(f"Shapes - GT: {video_gt.shape}, Pred: {video_pred.shape}, Pred2: {video_pred2.shape}")
-
     # Calculate metrics
     precision, recall, _ = precision_recall_curve(video_gt, video_pred)
     pr_auc = auc(recall, precision)
@@ -428,6 +460,7 @@ def main():
     args.modality = 'MIX2'
     args.max_seqlen = 200
     args.workers = 1
+    args.max_epoch = 200
 
     train_loader, val_loader, test_loader = create_data_loaders(args)
     model = Model(args).to(device)
@@ -449,6 +482,9 @@ def main():
     # Lists to store training history
     train_losses = []
     val_losses = []
+    best_pr_auc = 0
+    best_epoch = 0
+    early_stopping = EarlyStopping(patience=7, verbose=True)
 
     for epoch in range(args.max_epoch):
         print(f"\nEpoch {epoch+1}/{args.max_epoch}")
@@ -474,27 +510,41 @@ def main():
         if val_loss is not None:
             val_losses.append(val_loss)
 
-        # Step scheduler at epoch level
-        scheduler.step()
-
-        # Save checkpoint
-        if epoch % 2 == 0 and epoch > 0:
-            torch.save(model.state_dict(), f'./hlnet_saves/{args.model_name}{epoch}.pth')
-
-        # Evaluate
+        # Calculate PR-AUC for monitoring
         pr_auc, pr_auc_online = test_hl_vae(test_loader, model, device)
 
-        print(f'Epoch {epoch}/{args.max_epoch}:')
+        # Update best PR-AUC
+        if pr_auc > best_pr_auc:
+            best_pr_auc = pr_auc
+            best_epoch = epoch
+
+        print(f'Epoch {epoch+1}/{args.max_epoch}:')
         print(f'Train Loss: {train_loss:.4f}')
         if val_loss is not None:
             print(f'Validation Loss: {val_loss:.4f}')
-        print(f'Video-level PR-AUC:')
-        print(f'  Offline: {pr_auc:.4f}')
-        print(f'  Online: {pr_auc_online:.4f}')
+        print(f'PR-AUC (Offline/Online): {pr_auc:.4f}/{pr_auc_online:.4f}')
+        print(f'Best PR-AUC: {best_pr_auc:.4f} (Epoch {best_epoch+1})')
         print(f'Epoch time: {time.time() - st:.2f}s')
 
+        # Early stopping check
+        early_stopping(val_loss, model)
+        if early_stopping.early_stop:
+            print("Early stopping triggered")
+            # Load the best model state
+            model.load_state_dict(early_stopping.get_best_model_state())
+            break
+
+        scheduler.step()
+
+        if epoch % 5 == 0 and epoch > 0:
+            save_dir = './hlnet_saves_mm'
+            os.makedirs(save_dir, exist_ok=True)
+            torch.save(model.state_dict(), f'{save_dir}/{args.model_name}{epoch}.pth')
+
     # Save final model
-    torch.save(model.state_dict(), f'./hlnet_saves/final/{args.model_name}.pth')
+    save_dir = './hlnet_saves_mm/final'
+    os.makedirs(save_dir, exist_ok=True)
+    torch.save(model.state_dict(), f'{save_dir}/{args.model_name}{epoch}.pth')
 
     # Plot and save training history
     plot_training_history(train_losses, val_losses, save_path='hlnet_vae_training_history.png')
